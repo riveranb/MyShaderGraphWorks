@@ -33,6 +33,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_25d6fdfe07684967aeb6ba2ea4de62f8: 0.5
-    - _Amplify: 0.2
+    - _Amplify: 4.8677707e-13
     m_Colors: []
   m_BuildTextureStacks: []

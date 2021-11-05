@@ -27,6 +27,14 @@ Material:
         m_Texture: {fileID: 2800000, guid: b33a488f5d7bfe24c8c141dae3b3d8e4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DisplaceTex:
+        m_Texture: {fileID: 2800000, guid: b33a488f5d7bfe24c8c141dae3b3d8e4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RampMap:
+        m_Texture: {fileID: 2800000, guid: edb9bf3d599e2e14faac71f430a82a28, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2DLOD_35223957ae9f441a9b2716ae973a196d_Texture_1:
         m_Texture: {fileID: 2800000, guid: b33a488f5d7bfe24c8c141dae3b3d8e4, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -53,5 +61,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Amplify: 2
-    m_Colors: []
+    - _BurnExtent: 0.5
+    - _BurnOffset: 0.9
+    - _Vanish: 0.6666
+    m_Colors:
+    - _BurnFactor: {r: 0, g: 1, b: 0.5, a: 0}
+    - _CoefFactor: {r: -0.054353744, g: 0.7767778, b: 0.27757588, a: 0}
   m_BuildTextureStacks: []

@@ -42,7 +42,7 @@ public class ExplosionControl_002 : MonoBehaviour
         {
             burnOffset = Mathf.Lerp(burnOffset, 0, Time.deltaTime * 0.5f);
             burnExtent = Mathf.Lerp(burnExtent, 0.5f, Time.deltaTime);
-            clip = Mathf.Lerp(clip, 1, Time.deltaTime * 0.5f);
+            clip = Mathf.Lerp(clip, 1, Time.deltaTime);
             material.SetFloat(_Id_BurnOffset, burnOffset);
             material.SetFloat(_Id_BurnExtent, burnExtent);
             material.SetFloat(_Id_Vanish, clip);

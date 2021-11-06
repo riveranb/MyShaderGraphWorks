@@ -6,13 +6,13 @@ public class ExplosionControl_002 : MonoBehaviour
 {
     private static int _Id_CoefFactor = Shader.PropertyToID("_CoefFactor");
     private static int _Id_BurnOffset = Shader.PropertyToID("_BurnOffset");
-    private static int _Id_BurnExtent = Shader.PropertyToID("_BurnExtent");
+    //private static int _Id_BurnExtent = Shader.PropertyToID("_BurnExtent");
     private static int _Id_Vanish = Shader.PropertyToID("_Vanish");
 
     private Material material;
     private float scaler = 0.05f;
-    private float burnOffset = 1;
-    private float burnExtent = 1;
+    private float burnOffset = 0.025f;
+    //private float burnExtent = 1;
     private float clip = 0;
 
     private void Start()
@@ -27,24 +27,28 @@ public class ExplosionControl_002 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             scaler = 0.05f;
-            burnOffset = 1;
-            burnExtent = 1;
+            burnOffset = 0.025f;
+            //burnExtent = 1;
             clip = 0;
         }
 
         if (scaler < 0.98f)
         {
-            scaler = Mathf.Lerp(scaler, 1, Time.deltaTime * 3);
+            scaler = Mathf.Lerp(scaler, 1.5f, Time.deltaTime * 3);
             transform.localScale = new Vector3(scaler, scaler, scaler);
         }
 
-        if (burnOffset > 0.02f)
+        if (burnOffset < 0.5f)
         {
-            burnOffset = Mathf.Lerp(burnOffset, 0, Time.deltaTime * 0.5f);
-            burnExtent = Mathf.Lerp(burnExtent, 0.5f, Time.deltaTime);
-            clip = Mathf.Lerp(clip, 1, Time.deltaTime);
+            burnOffset = Mathf.Lerp(burnOffset, 1, Time.deltaTime * 0.5f);
+            //burnExtent = Mathf.Lerp(burnExtent, 0.5f, Time.deltaTime);
             material.SetFloat(_Id_BurnOffset, burnOffset);
-            material.SetFloat(_Id_BurnExtent, burnExtent);
+            //material.SetFloat(_Id_BurnExtent, burnExtent);
+        }
+
+        if (clip < 1)
+        {
+            clip = Mathf.Lerp(clip, 1, Time.deltaTime * 0.8f);
             material.SetFloat(_Id_Vanish, clip);
         }
 

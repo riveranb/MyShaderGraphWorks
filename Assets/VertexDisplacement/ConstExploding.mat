@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 002_Explosion
+  m_Name: ConstExploding
   m_Shader: {fileID: -6465566751694194690, guid: 939f33b136f1ecb45af8cf21437fc6ea, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -61,10 +61,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Amplify: 2
-    - _BurnExtent: 0.5
-    - _BurnOffset: 0.50117844
-    - _Vanish: 0.7843195
+    - _BurnExtent: 0.996
+    - _BurnOffset: 0.062
+    - _Vanish: 0
     m_Colors:
     - _BurnFactor: {r: 0, g: 1, b: 0.5, a: 0}
-    - _CoefFactor: {r: 0.26802266, g: -0.25547948, b: 0.65405685, a: 0}
+    - _CoefFactor: {r: 0.01, g: 0.36, b: 0.37, a: 0}
   m_BuildTextureStacks: []

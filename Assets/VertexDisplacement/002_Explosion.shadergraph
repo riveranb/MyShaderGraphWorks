@@ -5122,7 +5122,7 @@
     },
     "m_Name": "Explode Ramp",
     "m_DefaultReferenceName": "Texture2D_a669960a83d447338417b92a120e9907",
-    "m_OverrideReferenceName": "_RampMap",
+    "m_OverrideReferenceName": "_RampTex",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,

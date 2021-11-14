@@ -143,12 +143,37 @@
         },
         {
             "m_Id": "142d2c829889489c86b8d60bd7d4c304"
+        },
+        {
+            "m_Id": "86e4369a1f964d8b9b236d20f6b69d4d"
         }
     ],
-    "m_GroupDatas": [],
+    "m_GroupDatas": [
+        {
+            "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
+        }
+    ],
     "m_StickyNoteDatas": [
         {
             "m_Id": "002a3b822f5c40a18cbb2094ac1d909d"
+        },
+        {
+            "m_Id": "3baccf1d30994263858e84a31be8e7c9"
+        },
+        {
+            "m_Id": "c0ff08cc2bcd4a45b01cadd190bcb493"
+        },
+        {
+            "m_Id": "ca5c7308ac774fdeadb776653d8bd2d4"
+        },
+        {
+            "m_Id": "36a46b1ea224466ea0313d1d0c64f3e3"
+        },
+        {
+            "m_Id": "9c4ed6f5f05841d38b4525a439e8a389"
+        },
+        {
+            "m_Id": "f4c72d9c5a5b49fc93efd6c023a164f9"
         }
     ],
     "m_Edges": [
@@ -357,23 +382,9 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "552724c95f5446ef997fb745ce652b35"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "396dc7d88be54d7b8ddbad416dac5981"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
                     "m_Id": "7dc9574062f64b0b94eb5114c822604f"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 0
             }
         },
         {
@@ -443,7 +454,7 @@
                 "m_Node": {
                     "m_Id": "7dc9574062f64b0b94eb5114c822604f"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             }
         },
         {
@@ -542,6 +553,20 @@
                     "m_Id": "1062217b63e54014962697b64bc39654"
                 },
                 "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "86e4369a1f964d8b9b236d20f6b69d4d"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "552724c95f5446ef997fb745ce652b35"
+                },
+                "m_SlotId": 0
             }
         },
         {
@@ -1085,15 +1110,15 @@
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "1062217b63e54014962697b64bc39654",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Add",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -461.0,
-            "y": -155.99996948242188,
+            "x": -760.0000610351563,
+            "y": -636.0,
             "width": 130.0,
             "height": 118.0
         }
@@ -1123,16 +1148,16 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "11e7d4c79c934321b2f3093b01942a03",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -460.0000305175781,
-            "y": -197.0,
-            "width": 129.00001525878907,
+            "x": -759.0001220703125,
+            "y": -468.0,
+            "width": 129.0,
             "height": 34.0
         }
     },
@@ -1219,17 +1244,17 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "1ca8ee5837824f8da323b0170e09708d",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1382.0,
-            "y": -41.9999885559082,
+            "x": -1719.0001220703125,
+            "y": -221.0,
             "width": 130.0,
-            "height": 118.00000762939453
+            "height": 118.0
         }
     },
     "m_Slots": [
@@ -1333,15 +1358,15 @@
     "m_Type": "UnityEditor.ShaderGraph.TilingAndOffsetNode",
     "m_ObjectId": "21392356a4944480a4bbc027b958ee1a",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Tiling And Offset",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1407.0,
-            "y": -377.0,
+            "x": -2035.0,
+            "y": -655.0000610351563,
             "width": 155.0,
             "height": 142.0
         }
@@ -1836,16 +1861,16 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "2fba0f0983f248dc9e2c111297bd2e6f",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1569.0,
-            "y": -224.00001525878907,
-            "width": 122.00000762939453,
+            "x": -1854.0001220703125,
+            "y": -507.0,
+            "width": 122.0,
             "height": 34.0
         }
     },
@@ -1863,6 +1888,17 @@
     },
     "m_Property": {
         "m_Id": "68eea1ac49bf4c44ae0008095d927b72"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "33b5a66d55a047aa91ab00499a4ea77a",
+    "m_Title": "岩漿貼圖採樣受熱輻射亂流擾動影響",
+    "m_Position": {
+        "x": -2281.000244140625,
+        "y": -708.0
     }
 }
 
@@ -1903,6 +1939,26 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "36a46b1ea224466ea0313d1d0c64f3e3",
+    "m_Title": "",
+    "m_Content": "計算考慮熱輻射流動影響後的採樣用 UV 結果\nTurbulent-Normal-UV =  \nFrameTime * float2(熱輻射流向.xy) + UV;",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1627.0,
+        "y": -290.0,
+        "width": 243.0,
+        "height": 101.0
+    },
+    "m_Group": {
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
+    }
 }
 
 {
@@ -1958,15 +2014,15 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "396dc7d88be54d7b8ddbad416dac5981",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -754.0,
-            "y": 59.0,
+            "x": -1076.0001220703125,
+            "y": -513.0,
             "width": 98.0,
             "height": 34.0
         }
@@ -1993,17 +2049,17 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "3a8ec8e773bf42dbb6da550859634943",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1382.0001220703125,
-            "y": -190.0,
+            "x": -1719.0001220703125,
+            "y": -552.0,
             "width": 130.0,
-            "height": 118.00000762939453
+            "height": 118.0
         }
     },
     "m_Slots": [
@@ -2023,6 +2079,26 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "3baccf1d30994263858e84a31be8e7c9",
+    "m_Title": "",
+    "m_Content": "Frame time: \n# Time: 每個 frame 累積時間秒數\n# SineTime/CosineTime: Sin(Time)/Cos(Time)\n# DeltaTime: 此 frame 的時間差秒數\n\n乘上 0.1 故意放慢\n",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -2118.0,
+        "y": -454.0,
+        "width": 200.0,
+        "height": 125.0
+    },
+    "m_Group": {
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     }
 }
 
@@ -2195,15 +2271,15 @@
     "m_Type": "UnityEditor.ShaderGraph.SampleTexture2DNode",
     "m_ObjectId": "4805df752be5488295aa4c61ceb814cd",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1013.9999389648438,
-            "y": -116.99998474121094,
+            "x": -1351.0001220703125,
+            "y": -296.0000305175781,
             "width": 184.0,
             "height": 253.0
         }
@@ -2551,10 +2627,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -457.00006103515627,
-            "y": 110.00001525878906,
-            "width": 126.00000762939453,
-            "height": 118.00000762939453
+            "x": -273.0,
+            "y": 19.999998092651368,
+            "width": 126.0,
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -2606,15 +2682,15 @@
     "m_Type": "UnityEditor.ShaderGraph.NormalUnpackNode",
     "m_ObjectId": "5920f00fb6dd4f82ab50584095b194ac",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Normal Unpack",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -801.0000610351563,
-            "y": -116.99998474121094,
+            "x": -1138.000244140625,
+            "y": -296.0000305175781,
             "width": 145.00001525878907,
             "height": 130.0
         }
@@ -2861,15 +2937,15 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "60746180b43549af91fa736332923ab4",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1227.0001220703125,
-            "y": -75.99999237060547,
+            "x": -1558.0001220703125,
+            "y": -352.0,
             "width": 185.0,
             "height": 34.0
         }
@@ -3083,6 +3159,21 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "746325639c7b4a319d632e3f3e8dbf02",
+    "m_Id": 0,
+    "m_DisplayName": "強度",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "774b3a42a4784c75b8e13471ee6f5667",
     "m_Id": 0,
     "m_DisplayName": "Time",
@@ -3169,15 +3260,15 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "7dc9574062f64b0b94eb5114c822604f",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -617.9999389648438,
-            "y": -7.999999046325684,
+            "x": -929.0001220703125,
+            "y": -552.0,
             "width": 130.0,
             "height": 118.0
         }
@@ -3393,6 +3484,41 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "86e4369a1f964d8b9b236d20f6b69d4d",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -447.0,
+            "y": 60.0000114440918,
+            "width": 98.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "746325639c7b4a319d632e3f3e8dbf02"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": false,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "a8aaf802bec04f81bba5ab0d296d12dd"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "8741ba4d4e40495d8da7ea34d61ff512",
     "m_Id": 0,
@@ -3564,15 +3690,15 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "8ebcd1a2191e45299c2b42b7dba32b12",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1579.0,
-            "y": -314.0000305175781,
+            "x": -2207.0,
+            "y": -592.0000610351563,
             "width": 132.0,
             "height": 34.0
         }
@@ -3827,15 +3953,15 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "996f575d420c47f188a1c2a701809d0e",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1580.0,
-            "y": 17.000019073486329,
+            "x": -1917.0001220703125,
+            "y": -162.00003051757813,
             "width": 133.0,
             "height": 34.0
         }
@@ -3904,20 +4030,40 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "9c4ed6f5f05841d38b4525a439e8a389",
+    "m_Title": "採樣法線貼圖向量資訊",
+    "m_Content": "因 '熱輻射NormalMap' 設定為 'Normal map' Type，使用 'Normal Unpack' 節點將貼圖採樣的結果 (r, g, b) (分量區間 0~1) 轉換成正確的法線向量 (x, y, z) (分量區間 -1~1)。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1321.0,
+        "y": -389.0,
+        "width": 321.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "9de467ead59e413d9d1a0cf71f9d865d",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1573.000244140625,
-            "y": -180.0,
-            "width": 208.0,
-            "height": 302.0
+            "x": -1910.0001220703125,
+            "y": -359.0000305175781,
+            "width": 126.0,
+            "height": 118.0
         }
     },
     "m_Slots": [
@@ -4483,15 +4629,15 @@
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "b860fad0ebf54e2b9642f02d8e5bc225",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Add",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1194.0,
-            "y": -235.00001525878907,
+            "x": -1531.0001220703125,
+            "y": -645.0,
             "width": 130.0,
             "height": 118.0
         }
@@ -4682,6 +4828,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "c0ff08cc2bcd4a45b01cadd190bcb493",
+    "m_Title": "",
+    "m_Content": "改變貼圖的 UV 採樣樣式\nU = U * Tiling.x + Offset.x;\nV = V * Tiling.y + Offset.y;",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1876.0,
+        "y": -651.0,
+        "width": 171.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "c184871d5b214e1d84b5d7e7318fac1e",
     "m_Id": 0,
@@ -4793,6 +4959,26 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "ca5c7308ac774fdeadb776653d8bd2d4",
+    "m_Title": "",
+    "m_Content": "計算考慮岩漿流動影響後的採樣用 UV 結果\nLava-UV =  \nFrameTime * float2(岩漿流向.xy) + UV;",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1403.0,
+        "y": -647.0,
+        "width": 237.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     }
 }
 
@@ -4976,17 +5162,17 @@
     "m_Type": "UnityEditor.ShaderGraph.TimeNode",
     "m_ObjectId": "d74848425efb4c23a1ff6c24cb610a4a",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Time",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1762.000244140625,
-            "y": -156.00001525878907,
-            "width": 126.00000762939453,
-            "height": 173.00001525878907
+            "x": -2104.000244140625,
+            "y": -335.0,
+            "width": 126.0,
+            "height": 173.0
         }
     },
     "m_Slots": [
@@ -5050,15 +5236,15 @@
     "m_Type": "UnityEditor.ShaderGraph.SampleTexture2DNode",
     "m_ObjectId": "da29929db3714c0dac5b0f1986931db9",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -301.9998779296875,
-            "y": -180.00003051757813,
+            "x": -586.0001220703125,
+            "y": -496.0,
             "width": 184.0,
             "height": 253.0
         }
@@ -5271,17 +5457,17 @@
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "e19f626574664879b2b0f647c1811584",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     },
     "m_Name": "Add",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1194.000244140625,
-            "y": -42.000003814697269,
+            "x": -1531.0001220703125,
+            "y": -221.0,
             "width": 130.0,
-            "height": 118.00000762939453
+            "height": 118.0
         }
     },
     "m_Slots": [
@@ -5545,6 +5731,26 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "f4c72d9c5a5b49fc93efd6c023a164f9",
+    "m_Title": "採樣岩漿貼圖顏色",
+    "m_Content": "先前透過採樣 '熱輻射NormalMap' 得到熱輻射亂流影響之位移差向量，Turbulence-Dir。\n採樣用的 Lava-UV =\nLava-UV + Turbulence-Dir * 強度;\n以此累加計算亂流偏差後的 UV 對岩漿貼圖採樣。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -874.0,
+        "y": -402.0,
+        "width": 292.0,
+        "height": 103.0
+    },
+    "m_Group": {
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
     }
 }
 

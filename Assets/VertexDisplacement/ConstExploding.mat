@@ -35,6 +35,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: edb9bf3d599e2e14faac71f430a82a28, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _RampTex:
+        m_Texture: {fileID: 2800000, guid: edb9bf3d599e2e14faac71f430a82a28, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2DLOD_35223957ae9f441a9b2716ae973a196d_Texture_1:
         m_Texture: {fileID: 2800000, guid: b33a488f5d7bfe24c8c141dae3b3d8e4, type: 3}
         m_Scale: {x: 1, y: 1}

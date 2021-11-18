@@ -66,9 +66,9 @@ Material:
     m_Floats:
     - _Amplify: 2
     - _BurnExtent: 0.5
-    - _BurnOffset: 0.50117844
-    - _Vanish: 0.7843195
+    - _BurnOffset: 0.4267738
+    - _Vanish: 0.5728314
     m_Colors:
     - _BurnFactor: {r: 0, g: 1, b: 0.5, a: 0}
-    - _CoefFactor: {r: 0.26802266, g: -0.25547948, b: 0.65405685, a: 0}
+    - _CoefFactor: {r: 0.4140999, g: 0.42433965, b: -0.17183958, a: 0}
   m_BuildTextureStacks: []

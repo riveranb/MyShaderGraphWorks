@@ -151,6 +151,9 @@
     "m_GroupDatas": [
         {
             "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
+        },
+        {
+            "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
         }
     ],
     "m_StickyNoteDatas": [
@@ -174,6 +177,15 @@
         },
         {
             "m_Id": "f4c72d9c5a5b49fc93efd6c023a164f9"
+        },
+        {
+            "m_Id": "1ab7260fc26d4c44b1fc3fb6bdcd4776"
+        },
+        {
+            "m_Id": "c9927fd8288e4f528a0b992faf92d457"
+        },
+        {
+            "m_Id": "1f3ededbd17f4ff5b8dbd70b63a494d3"
         }
     ],
     "m_Edges": [
@@ -538,7 +550,7 @@
                 "m_Node": {
                     "m_Id": "248ef1299fd04920a0d6e7719db147f4"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 0
             }
         },
         {
@@ -664,7 +676,7 @@
                 "m_Node": {
                     "m_Id": "248ef1299fd04920a0d6e7719db147f4"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             }
         },
         {
@@ -838,8 +850,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 2635.0,
-            "y": -341.0
+            "x": 2984.0,
+            "y": -352.0000305175781
         },
         "m_Blocks": [
             {
@@ -855,8 +867,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 2635.0,
-            "y": -139.99996948242188
+            "x": 2984.0,
+            "y": -150.99998474121095
         },
         "m_Blocks": [
             {
@@ -893,8 +905,8 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 2613.0,
-        "y": -405.0,
+        "x": 2962.0,
+        "y": -416.0,
         "width": 277.0,
         "height": 100.0
     },
@@ -1008,16 +1020,16 @@
     "m_Type": "UnityEditor.ShaderGraph.MaximumNode",
     "m_ObjectId": "09bc0f1f56654f15be3749d8c211f6df",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Maximum",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1624.0,
-            "y": -331.0,
-            "width": 126.0,
+            "x": 1795.0,
+            "y": -528.0,
+            "width": 125.99999237060547,
             "height": 118.0
         }
     },
@@ -1206,15 +1218,15 @@
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "142d2c829889489c86b8d60bd7d4c304",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Add",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 2179.0,
-            "y": -305.0,
+            "x": 2350.0,
+            "y": -482.99993896484377,
             "width": 130.0,
             "height": 118.0
         }
@@ -1236,6 +1248,26 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "1ab7260fc26d4c44b1fc3fb6bdcd4776",
+    "m_Title": "",
+    "m_Content": "給予原本岩漿顏色 (LavaColor) 加強亮度。\nGlow-LavaColor.rgb = LavaColor.rgb * LavaColor.rgb + 10 * 強度 * LavaColor.rgb;",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 2.0,
+        "y": -475.0,
+        "width": 465.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     }
 }
 
@@ -1282,17 +1314,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SubtractNode",
     "m_ObjectId": "1f24350158af4fc8a555ddf058f8b394",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Subtract",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 453.0,
-            "y": -179.99998474121095,
-            "width": 208.0,
-            "height": 302.0
+            "x": 647.0,
+            "y": -266.99993896484377,
+            "width": 125.99999237060547,
+            "height": 118.0
         }
     },
     "m_Slots": [
@@ -1317,19 +1349,39 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "1f3ededbd17f4ff5b8dbd70b63a494d3",
+    "m_Title": "",
+    "m_Content": "類似前面對 red 通道計算亮度增幅效果，套用在 green 與 blue 通道。\naddByGreen = Glow-LavaColor.g - 1;\naddByGreen = Max(0, addByGreen); // 讓 addByGreen 永遠>= 0\naddByBlue = Glow-LavaColor.b - 1;\naddByBlue = Max(0, addByBlue); // 讓 addByBlue 永遠 >= 0\nFinal-Glow-LavaColor.rgb += float3(addByGreen, 0, addByGreen) + float3(addByBlue, addByBlue, 0);",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 1857.0,
+        "y": -360.0,
+        "width": 587.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SubtractNode",
     "m_ObjectId": "2065bd06e8594cbbb0ff1c0b2c399551",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Subtract",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1427.0001220703125,
-            "y": -331.0000305175781,
-            "width": 126.0,
+            "x": 1598.0,
+            "y": -528.0,
+            "width": 125.99999237060547,
             "height": 118.0
         }
     },
@@ -1519,15 +1571,15 @@
     "m_Type": "UnityEditor.ShaderGraph.ClampNode",
     "m_ObjectId": "2293e6e581f54b058fb4cd87e1c5ff73",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Clamp",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 658.0000610351563,
-            "y": -179.99998474121095,
+            "x": 859.9999389648438,
+            "y": -266.99993896484377,
             "width": 141.0,
             "height": 142.0
         }
@@ -1560,15 +1612,15 @@
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "248ef1299fd04920a0d6e7719db147f4",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Add",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 2005.0001220703125,
-            "y": -449.0,
+            "x": 2172.0,
+            "y": -483.0,
             "width": 130.0,
             "height": 118.0
         }
@@ -2161,17 +2213,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SubtractNode",
     "m_ObjectId": "4106ad6475cd4878bf63aa2c8f797d01",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Subtract",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1427.0,
-            "y": -121.00004577636719,
-            "width": 126.0,
-            "height": 118.0
+            "x": 1597.9998779296875,
+            "y": -242.99998474121095,
+            "width": 125.99999237060547,
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -2620,16 +2672,16 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "552724c95f5446ef997fb745ce652b35",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -273.0,
-            "y": 19.999998092651368,
-            "width": 126.0,
+            "x": -89.99996185302735,
+            "y": -250.99993896484376,
+            "width": 125.99999237060547,
             "height": 117.99999237060547
         }
     },
@@ -2805,15 +2857,15 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector3Node",
     "m_ObjectId": "5acf805072f74c179212627a9b45884d",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Vector 3",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 874.0,
-            "y": -186.99998474121095,
+            "x": 1071.0001220703125,
+            "y": -298.9999084472656,
             "width": 128.0,
             "height": 125.0
         }
@@ -2851,17 +2903,17 @@
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "5b02791f200440e68f9d156e7f0861b5",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Add",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 89.9999771118164,
-            "y": -179.99998474121095,
-            "width": 130.0,
-            "height": 118.00000762939453
+            "x": 273.0000305175781,
+            "y": -430.99993896484377,
+            "width": 129.99998474121095,
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -2972,17 +3024,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SplitNode",
     "m_ObjectId": "608853f136a64375aa9efe92d11bb8c9",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Split",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 253.00001525878907,
-            "y": -180.00001525878907,
-            "width": 120.00000762939453,
-            "height": 149.00001525878907
+            "x": 455.0,
+            "y": -266.99993896484377,
+            "width": 119.99999237060547,
+            "height": 149.0
         }
     },
     "m_Slots": [
@@ -3134,6 +3186,17 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "71384b7bbebd4011b424a133d5fd1e60",
+    "m_Title": "一連串岩漿顏色加強亮度的計算，方便強化 Bloom 後處理效果，但我覺得這部分有點雞肋",
+    "m_Position": {
+        "x": -301.0,
+        "y": -685.9999389648438
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "739979185693427bba6d8061b8aab2ae",
     "m_Id": 1,
@@ -3191,17 +3254,17 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector3Node",
     "m_ObjectId": "7c295f6ae66d4d85837434b47a37bd66",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Vector 3",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1825.0,
-            "y": -331.0,
+            "x": 1995.9998779296875,
+            "y": -528.0,
             "width": 128.0,
-            "height": 125.0
+            "height": 124.99999237060547
         }
     },
     "m_Slots": [
@@ -3487,17 +3550,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "86e4369a1f964d8b9b236d20f6b69d4d",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -447.0,
-            "y": 60.0000114440918,
-            "width": 98.0,
-            "height": 34.0
+            "x": -215.9999237060547,
+            "y": -313.0,
+            "width": 97.99999237060547,
+            "height": 33.999996185302737
         }
     },
     "m_Slots": [
@@ -3546,17 +3609,17 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "87b5ddbf99ea41ae877cd4401230fde5",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -73.00004577636719,
-            "y": -179.99998474121095,
-            "width": 130.0,
-            "height": 118.00000762939453
+            "x": 110.00006103515625,
+            "y": -430.99993896484377,
+            "width": 129.99998474121095,
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -3607,17 +3670,17 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "8b7aca24568c4fac83559a5f2a988a60",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -73.00004577636719,
-            "y": 0.000020503997802734375,
-            "width": 130.0,
-            "height": 118.00000762939453
+            "x": 110.00006103515625,
+            "y": -250.99993896484376,
+            "width": 129.99998474121095,
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -4376,15 +4439,15 @@
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "ac9a04e5f0b4431bb0a1d69a0f46341d",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Add",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1041.0,
-            "y": -357.0000305175781,
+            "x": 1252.0,
+            "y": -534.9999389648438,
             "width": 130.0,
             "height": 118.0
         }
@@ -4462,17 +4525,17 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector3Node",
     "m_ObjectId": "af135d642ded4bb69b035da74da02059",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Vector 3",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1825.0,
-            "y": -127.99996185302735,
-            "width": 128.0,
-            "height": 125.0
+            "x": 1995.9998779296875,
+            "y": -250.00001525878907,
+            "width": 127.99999237060547,
+            "height": 124.99999237060547
         }
     },
     "m_Slots": [
@@ -4965,16 +5028,36 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
-    "m_ObjectId": "ca5c7308ac774fdeadb776653d8bd2d4",
+    "m_ObjectId": "c9927fd8288e4f528a0b992faf92d457",
     "m_Title": "",
-    "m_Content": "計算考慮岩漿流動影響後的採樣用 UV 結果\nLava-UV =  \nFrameTime * float2(岩漿流向.xy) + UV;",
+    "m_Content": "從加亮的 Glow-LavaColor.r 通道，計算額外加亮強度給 .gb 通道。\ntoAdd = (Glow-LavaColor.r - 2);\ntoAdd = Clamp (toAdd, 0, 5); // 取界線 [0 ~ 5]\nGlow-LavaColor.rgb += float3(0, toAdd, toAdd);",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -1403.0,
-        "y": -647.0,
-        "width": 237.0,
+        "x": 813.0,
+        "y": -526.0,
+        "width": 418.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "ca5c7308ac774fdeadb776653d8bd2d4",
+    "m_Title": "",
+    "m_Content": "計算考慮岩漿流動影響後的採樣用 UV 結果\nLava-UV = FrameTime * float2(岩漿流向.xy) + UV;",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1400.0,
+        "y": -637.0,
+        "width": 303.0,
         "height": 100.0
     },
     "m_Group": {
@@ -5323,17 +5406,17 @@
     "m_Type": "UnityEditor.ShaderGraph.MaximumNode",
     "m_ObjectId": "de01f72bc6b84dbdb8ac757114fdcb5c",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Maximum",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1624.0,
-            "y": -121.00001525878906,
-            "width": 126.0,
-            "height": 118.0
+            "x": 1794.9998779296875,
+            "y": -242.99998474121095,
+            "width": 125.99999237060547,
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -5695,16 +5778,16 @@
     "m_Type": "UnityEditor.ShaderGraph.SplitNode",
     "m_ObjectId": "f3aba66d08784f0f960fd7c0350899d7",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "71384b7bbebd4011b424a133d5fd1e60"
     },
     "m_Name": "Split",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1226.0,
-            "y": -357.0,
-            "width": 120.00000762939453,
+            "x": 1424.0,
+            "y": -416.0,
+            "width": 119.99999237060547,
             "height": 149.0
         }
     },

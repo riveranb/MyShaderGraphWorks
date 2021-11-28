@@ -1256,7 +1256,7 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "1ab7260fc26d4c44b1fc3fb6bdcd4776",
     "m_Title": "",
-    "m_Content": "給予原本岩漿顏色 (LavaColor) 加強亮度。\nGlow-LavaColor.rgb = LavaColor.rgb * LavaColor.rgb + 10 * 強度 * LavaColor.rgb;",
+    "m_Content": "給予原本岩漿顏色 (LavaColor) 加強亮度\nGlow-LavaColor.rgb = LavaColor.rgb * LavaColor.rgb + 10 * 強度 * LavaColor.rgb;",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
@@ -1352,7 +1352,7 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "1f3ededbd17f4ff5b8dbd70b63a494d3",
     "m_Title": "",
-    "m_Content": "類似前面對 red 通道計算亮度增幅效果，套用在 green 與 blue 通道。\naddByGreen = Glow-LavaColor.g - 1;\naddByGreen = Max(0, addByGreen); // 讓 addByGreen 永遠>= 0\naddByBlue = Glow-LavaColor.b - 1;\naddByBlue = Max(0, addByBlue); // 讓 addByBlue 永遠 >= 0\nFinal-Glow-LavaColor.rgb += float3(addByGreen, 0, addByGreen) + float3(addByBlue, addByBlue, 0);",
+    "m_Content": "類似前面對 red 通道計算亮度增幅效果，套用在 green 與 blue 通道\naddByGreen = Glow-LavaColor.g - 1;\naddByGreen = Max(0, addByGreen); // 讓 addByGreen 永遠>= 0\naddByBlue = Glow-LavaColor.b - 1;\naddByBlue = Max(0, addByBlue); // 讓 addByBlue 永遠 >= 0\nFinal-Glow-LavaColor.rgb += float3(addByGreen, 0, addByGreen) + float3(addByBlue, addByBlue, 0);",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
@@ -5030,12 +5030,12 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "c9927fd8288e4f528a0b992faf92d457",
     "m_Title": "",
-    "m_Content": "從加亮的 Glow-LavaColor.r 通道，計算額外加亮強度給 .gb 通道。\ntoAdd = (Glow-LavaColor.r - 2);\ntoAdd = Clamp (toAdd, 0, 5); // 取界線 [0 ~ 5]\nGlow-LavaColor.rgb += float3(0, toAdd, toAdd);",
+    "m_Content": "從加亮的 Glow-LavaColor.r 通道，計算額外加亮強度給 .gb 通道\ntoAdd = (Glow-LavaColor.r - 2);\ntoAdd = Clamp (toAdd, 0, 5); // 取界線 [0 ~ 5]\nGlow-LavaColor.rgb += float3(0, toAdd, toAdd);",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 813.0,
+        "x": 815.0,
         "y": -526.0,
         "width": 418.0,
         "height": 100.0

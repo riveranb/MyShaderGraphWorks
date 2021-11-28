@@ -2381,9 +2381,9 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 1725.0,
-        "y": -1158.0,
-        "width": 92.0,
+        "x": 1663.0,
+        "y": -1159.0,
+        "width": 157.0,
         "height": 100.0
     },
     "m_Group": {
@@ -2468,15 +2468,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "6ea263e759a54f00a597227057024199",
     "m_Title": "",
-    "m_Content": "Object-Space-Position += Object-Space-Normal * noise-factor;\n計算結果餵給 Vertex Context，因此這裡皆在處理 Vertex Shader 中的頂點位置",
+    "m_Content": "Object-Space-Position += Object-Space-Normal * noise-factor;\n計算結果餵給 Vertex Context，因此這裡皆在處理 Vertex Shader 中的頂點位置。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 270.0,
-        "y": -966.0,
-        "width": 299.4347839355469,
-        "height": 61.0
+        "x": 190.0,
+        "y": -963.0,
+        "width": 375.0,
+        "height": 65.2174072265625
     },
     "m_Group": {
         "m_Id": "b9506211e8f14feeb60c6ac9aad64291"
@@ -2714,10 +2714,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 98.4000244140625,
-            "y": -924.7999877929688,
-            "width": 119.99999237060547,
-            "height": 34.4000244140625
+            "x": 88.0,
+            "y": -899.0,
+            "width": 120.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -3002,9 +3002,9 @@
     "m_Position": {
         "serializedVersion": "2",
         "x": -1030.0,
-        "y": -1468.0,
-        "width": 200.0,
-        "height": 125.0
+        "y": -1460.0,
+        "width": 213.610595703125,
+        "height": 117.4384765625
     },
     "m_Group": {
         "m_Id": "e0570b4771c24d39946455906b501dda"
@@ -3310,9 +3310,9 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 124.0,
-        "y": -336.0,
-        "width": 164.04998779296876,
+        "x": 46.0,
+        "y": -331.0,
+        "width": 267.0,
         "height": 100.0
     },
     "m_Group": {
@@ -4061,14 +4061,14 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "dcd94a24cb96459696d5441d729b8e15",
     "m_Title": "亂數",
-    "m_Content": "Position + Time 作為 Voronoi 之 UV 輸入\nPosition + TIme + Time 作為 Simple Noise 之 UV 輸入\n最終 Noise Pattern Color = Voronoi * SimpleNoise",
+    "m_Content": "Position + Time 作為 Voronoi 之 UV 輸入；\nPosition + TIme + Time 作為 Simple Noise 之 UV 輸入；\n最終 Noise Pattern Color = Voronoi * SimpleNoise。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
         "x": 368.0,
         "y": -337.0,
-        "width": 304.0,
+        "width": 337.478271484375,
         "height": 100.0
     },
     "m_Group": {
@@ -4451,14 +4451,14 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "ed90a41b6c504a8bbffb0e6e923694c3",
     "m_Title": "",
-    "m_Content": "以UV空間概念作為輸入計算出一連續性的亂數結果，在此將改變後的 Object Space Position (.xy) 當作輸入 UV",
+    "m_Content": "以UV空間概念作為輸入計算出一連續性的亂數結果，在此將改變後的 Object Space Position (.xy) 當作輸入 UV。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 26.399999618530275,
-        "y": -821.5999755859375,
-        "width": 168.8000030517578,
+        "x": 26.0,
+        "y": -822.0,
+        "width": 203.0,
         "height": 100.0
     },
     "m_Group": {

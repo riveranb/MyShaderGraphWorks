@@ -83,6 +83,12 @@
     "m_StickyNoteDatas": [
         {
             "m_Id": "c1a8bf44428d4ae48ed116c85cca5858"
+        },
+        {
+            "m_Id": "7be5f2848248486fb3a00146ee74697e"
+        },
+        {
+            "m_Id": "9e969298afda48e48e41b856a0f17ae5"
         }
     ],
     "m_Edges": [
@@ -1178,6 +1184,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "7be5f2848248486fb3a00146ee74697e",
+    "m_Title": "",
+    "m_Content": "Fragment Context 中 BaseColor 單純由 'Albedo Map' 貼圖採樣決定",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 426.0,
+        "y": -85.0,
+        "width": 200.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "7fd295a056404daf92aae09a38577e61",
     "m_Id": 0,
@@ -1355,6 +1381,26 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "9e969298afda48e48e41b856a0f17ae5",
+    "m_Title": "Fragment Shader 處理 Dissolve 效果",
+    "m_Content": "此 Shader 想做的事: 在 Fragment Shader 階段中，透過計算 'Alpha', 'Alpha Clip Threshold' 來決定哪些像素區域要出現，那些要消失 (被 Fragment Shader 放棄填入顏色)；並參考消失範圍計算適當的自發光顏色",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 786.0,
+        "y": 374.0,
+        "width": 392.0,
+        "height": 63.213623046875
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {

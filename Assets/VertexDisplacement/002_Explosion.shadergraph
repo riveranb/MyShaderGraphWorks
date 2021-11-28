@@ -1126,7 +1126,7 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "00bbde8955394dcbab0164e5425702b8",
     "m_Title": "Vertex Shader採樣亂數貼圖",
-    "m_Content": "因在計算新的頂點位置，餵給 Vertex Context Position，這段計算發生在 Vertex Shader中。\n早期的 low-end GPU 會不支援或不建議在 Vertex Shader 中採樣 Texture，但當前的 Mobile GPU (除了最 low-end market) 應該都沒有效能上的顧慮。\n但仍要記得在 Vertex Shader 採樣 Texture 的代價會比在 Fragment Shader 更高。\n\n此使用 SampleTexture2DLOD Node，為了直接指定 Mipmap LOD level = 0 進行採樣\n",
+    "m_Content": "因在計算新的頂點位置，餵給 Vertex Context Position，這段計算發生在 Vertex Shader中。\n早期的 low-end GPU 會不支援或不建議在 Vertex Shader 中採樣 Texture，但當前的 Mobile GPU (除了最 low-end market) 應該都沒有效能上的顧慮。\n但仍要記得在 Vertex Shader 採樣 Texture 的代價會比在 Fragment Shader 更高。\n\n此使用 SampleTexture2DLOD Node，為了直接指定 Mipmap LOD level = 0 進行採樣。\n",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
@@ -1533,7 +1533,7 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 787.9999389648438,
+            "x": 827.0,
             "y": -1197.0,
             "width": 206.0,
             "height": 132.0
@@ -2930,10 +2930,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 827.0000610351563,
-            "y": -1054.0,
+            "x": 827.0,
+            "y": -1031.0,
             "width": 130.0,
-            "height": 118.0
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -2976,14 +2976,14 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "54c0af60f032419bafc08d2c5cf9c120",
     "m_Title": "內積運算出位移強度",
-    "m_Content": "從亂數貼圖採樣的結果當作 Object Space 中的向量，Displaced(r, g, b)\n與之前計算的 3 維位移係數做內積 Dot Product，算出兩個向量間的投影量，作為位移強度結果。",
+    "m_Content": "從亂數貼圖採樣的結果當作 Object Space 中的向量，Displaced(r, g, b)\n與之前計算的 3 維位移係數做內積 Dot Product，算出兩個向量間的投影比例，作為位移強度結果。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
         "x": 338.0,
         "y": -1113.0,
-        "width": 306.0,
+        "width": 329.91302490234377,
         "height": 100.0
     },
     "m_Group": {
@@ -3226,10 +3226,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1039.0,
+            "x": 1153.0,
             "y": -1197.0,
             "width": 130.0,
-            "height": 118.0
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -3660,9 +3660,9 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 1692.0,
-        "y": -970.0,
-        "width": 158.0,
+        "x": 1726.0,
+        "y": -942.0,
+        "width": 151.0,
         "height": 100.0
     },
     "m_Group": {
@@ -3857,14 +3857,14 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "7a6267f7db814f9199f624b1a988ac5d",
     "m_Title": "係數權重調整，做法可自由變化",
-    "m_Content": "Combine 為 (r, g, b)\n1. 然後對每個通道數值做小範圍調整\n(r, g, b) = (r, g, b) * float3(0.5, 0.5, 0.5) + float3(0.25, 0.25, 0.25);\n\n2. 再算 3 通道總和 (透過 Dot) 當作平衡權重\nweight = 2r + 2g + 2b;\n(r, g, b) /= float3(weight, weight, weight)\n\n// 這段我本來拉節點編到太痛苦，所以第一版後來改到 C# script 實現比較快，這也是有些 programmer 討厭用圖形化編輯的原因 (就我www)",
+    "m_Content": "Combine 為 (r, g, b)\n1. 然後對每個通道數值做小範圍調整：\n(r, g, b) = (r, g, b) * float3(0.5, 0.5, 0.5) + float3(0.25, 0.25, 0.25);\n\n2. 再算 3 通道總和 (透過 Dot) 當作平衡權重：\nweight = 2r + 2g + 2b;\n(r, g, b) /= float3(weight, weight, weight);\n\n// 這段我本來拉節點編到太痛苦，所以第一版後來改到 C# script 實現比較快，這也是有些 programmer 討厭用圖形化編輯的原因 (就我www)",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -1164.0,
+        "x": -1447.0,
         "y": -1204.0,
-        "width": 381.0,
+        "width": 678.0,
         "height": 181.0
     },
     "m_Group": {
@@ -3901,14 +3901,14 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "7ad2f4a1e28a41928838850a125e4d28",
     "m_Title": "內積運算作為燃燒係數",
-    "m_Content": "從亂數貼圖採樣的 Noise(r, g, b)\n與之前計算的 3 通道係數做內積 Dot Product，算出兩個向量間的投影量，作為燃燒係數。\n\n為了控制目的，透過 Exposed Shader Property 調整係數 (Coef)\nCoef = Coef * BurnExtent + BurnOffset;",
+    "m_Content": "從亂數貼圖採樣的 Noise(r, g, b) 與之前計算的 3 通道係數做內積 Dot Product，算出兩個向量間的投影比例，作為燃燒係數。\n\n為了控制目的，透過 Exposed Shader Property 調整係數 (Coef):\nCoef = Coef * BurnExtent + BurnOffset;",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 440.0,
+        "x": 428.0,
         "y": -348.0,
-        "width": 292.0,
+        "width": 303.8352966308594,
         "height": 130.0
     },
     "m_Group": {
@@ -5542,10 +5542,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 640.0,
-            "y": -1186.0,
+            "x": 660.0,
+            "y": -1200.0001220703125,
             "width": 128.0,
-            "height": 118.0
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -7186,10 +7186,10 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 756.0,
-        "y": -432.0,
-        "width": 301.0,
-        "height": 216.0500030517578
+        "x": 751.0,
+        "y": -431.0,
+        "width": 312.0,
+        "height": 216.0
     },
     "m_Group": {
         "m_Id": "494a5f9cf35a469b98744b9d45681b77"
@@ -7201,15 +7201,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "ebed8cb67a1d465a8bdb184fa4ef716e",
     "m_Title": "Alpha Cutout",
-    "m_Content": "前面計算出的燃燒係數 Coef 作為 Fragment Context Alpha 結果\n\n透過 Alpha 透空達到煙霧消失效果\nif (Alpha < VanishClip)\n    discard this fragment;\n外部控制 VanishClip 從 0 -> 1 可達到從局部到完全消失的效果。",
+    "m_Content": "前面計算出的燃燒係數 Coef 作為 Fragment Context Alpha 結果\n\n透過 Alpha 透空達到煙霧消失效果：\nif (Alpha < VanishClip)\n    discard this fragment;\n外部控制 VanishClip 從 0 -> 1 可達到從局部到完全消失的效果。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 1448.0,
-        "y": -371.0,
-        "width": 213.0,
-        "height": 142.0
+        "x": 1449.0,
+        "y": -359.0,
+        "width": 346.0,
+        "height": 118.86103820800781
     },
     "m_Group": {
         "m_Id": ""

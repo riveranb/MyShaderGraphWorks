@@ -79,7 +79,11 @@
             "m_Id": "5ccf640ddc194725b7565324372f94d0"
         }
     ],
-    "m_GroupDatas": [],
+    "m_GroupDatas": [
+        {
+            "m_Id": "63164c80455f484ebbdbe499abaef135"
+        }
+    ],
     "m_StickyNoteDatas": [
         {
             "m_Id": "c1a8bf44428d4ae48ed116c85cca5858"
@@ -89,6 +93,18 @@
         },
         {
             "m_Id": "9e969298afda48e48e41b856a0f17ae5"
+        },
+        {
+            "m_Id": "3082f34ff48b4247aabb90b66d88de17"
+        },
+        {
+            "m_Id": "0009ddfa036e483eae009df74713a1f1"
+        },
+        {
+            "m_Id": "eed0dbff09be45f8b329f35c4d606ea7"
+        },
+        {
+            "m_Id": "46fac75ebf8e4a76b2021bd0568dc8b5"
         }
     ],
     "m_Edges": [
@@ -117,7 +133,7 @@
                 "m_Node": {
                     "m_Id": "c2d2fbb3023043dc8b0167a97f32f022"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 0
             }
         },
         {
@@ -257,7 +273,7 @@
                 "m_Node": {
                     "m_Id": "c2d2fbb3023043dc8b0167a97f32f022"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             }
         }
     ],
@@ -327,6 +343,26 @@
             "m_Id": "e91a0de19d6c47cbbe5ec7d74b3069d4"
         }
     ]
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "0009ddfa036e483eae009df74713a1f1",
+    "m_Title": "Alpha Clip Threshold",
+    "m_Content": "轉換到 [-0.05 ~ 1.05] 的 Sin(Frame-Time) 計算結果直接指定為 Fragment Context 中的 'Alpha Clip Threshold'\n因此隨時間改變，'Alpha Clip Threshold' 會在 [-0.05 ~ 1.05] 之間變動。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 533.0,
+        "y": 313.0,
+        "width": 256.0,
+        "height": 109.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {
@@ -404,8 +440,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 238.0,
-            "y": 18.9999942779541,
+            "x": 261.9999694824219,
+            "y": -211.99998474121095,
             "width": 148.0,
             "height": 34.0
         }
@@ -447,16 +483,16 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "12221363b8ac45b08fcc8122938e5542",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "63164c80455f484ebbdbe499abaef135"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -615.0,
-            "y": 652.0,
-            "width": 119.99999237060547,
+            "x": -498.0,
+            "y": 219.99998474121095,
+            "width": 120.0,
             "height": 34.0
         }
     },
@@ -519,10 +555,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -925.0,
-            "y": 486.0,
-            "width": 126.0,
-            "height": 173.0
+            "x": -926.0000610351563,
+            "y": 314.0,
+            "width": 126.00000762939453,
+            "height": 173.00001525878907
         }
     },
     "m_Slots": [
@@ -688,6 +724,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "3082f34ff48b4247aabb90b66d88de17",
+    "m_Title": "",
+    "m_Content": "Frame time: 從內建 Time 功能節點取得 Sin(Frame-Time)。\n原本 Sin() 結果落於 [-1 ~ 1] 之間，透過 Remap 功能節點把結果轉換成 [-0.05 ~ 1.05] 之間 (其實 [0~1] 區間也沒多大差別)。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -922.0,
+        "y": 486.0,
+        "width": 345.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SamplerStateMaterialSlot",
     "m_ObjectId": "33b68cd768af499eac94c399272fae06",
     "m_Id": 3,
@@ -728,15 +784,15 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "3a811b8d828b43a7a113cb7a9363aa56",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "63164c80455f484ebbdbe499abaef135"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -19.999980926513673,
-            "y": 304.0,
+            "x": -112.00006103515625,
+            "y": 126.0,
             "width": 122.0,
             "height": 34.0
         }
@@ -789,6 +845,26 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "SurfaceDescription.AlphaClipThreshold"
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "46fac75ebf8e4a76b2021bd0568dc8b5",
+    "m_Title": "消失邊緣的自發強光 Emission",
+    "m_Content": "'溶解高光' 外部變數決定 HDR Color。\n\n已知溶解條件是 Alpha <= Alpha-Clip-Threshold；所以可使用 Alpha-Clip-Threshold + '邊緣厚度' 作為自發強光的上限值，條件式如下：\nif (Alpha < ('Alpha-Clip-Threshold' + '邊緣厚度') )\n    Emission = 1;\nelse\n    Emission - 0;\n最後 Emission = Emission * 溶解高光(Color); // 指定給 Fragment Context 中的 Emission\n\nStep Function 節點只是為了方便完成上述條件式。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -59.0,
+        "y": -62.0,
+        "width": 487.0,
+        "height": 185.0
+    },
+    "m_Group": {
+        "m_Id": "63164c80455f484ebbdbe499abaef135"
+    }
 }
 
 {
@@ -955,17 +1031,17 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "5ccf640ddc194725b7565324372f94d0",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "63164c80455f484ebbdbe499abaef135"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 190.0,
-            "y": 337.9999694824219,
+            "x": 93.99996948242188,
+            "y": 178.00001525878907,
             "width": 130.0,
-            "height": 118.0
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -1032,6 +1108,17 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "SurfaceDescription.BaseColor"
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "63164c80455f484ebbdbe499abaef135",
+    "m_Title": "透過亂數圖案決定 Dissolve 圖形效果，並額外計算未消失區域的自發強光效果 Emission",
+    "m_Position": {
+        "x": -523.0,
+        "y": -114.0
+    }
 }
 
 {
@@ -1149,17 +1236,17 @@
     "m_Type": "UnityEditor.ShaderGraph.StepNode",
     "m_ObjectId": "795cf94e6fe944ec9a8e1f1434c36662",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "63164c80455f484ebbdbe499abaef135"
     },
     "m_Name": "Step",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -44.0,
-            "y": 338.0,
-            "width": 208.0,
-            "height": 302.0
+            "x": -112.00006103515625,
+            "y": 178.00001525878907,
+            "width": 146.0,
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -1192,8 +1279,8 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 426.0,
-        "y": -85.0,
+        "x": 462.0,
+        "y": -315.0,
         "width": 200.0,
         "height": 100.0
     },
@@ -1277,8 +1364,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 434.9999694824219,
-            "y": -21.00000762939453,
+            "x": 470.9999694824219,
+            "y": -251.0,
             "width": 183.99998474121095,
             "height": 253.0
         }
@@ -1388,15 +1475,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "9e969298afda48e48e41b856a0f17ae5",
     "m_Title": "Fragment Shader 處理 Dissolve 效果",
-    "m_Content": "此 Shader 想做的事: 在 Fragment Shader 階段中，透過計算 'Alpha', 'Alpha Clip Threshold' 來決定哪些像素區域要出現，那些要消失 (被 Fragment Shader 放棄填入顏色)；並參考消失範圍計算適當的自發光顏色",
+    "m_Content": "此 Shader 想做的事：\n在 Fragment Shader 階段中，透過計算 'Alpha', 'Alpha Clip Threshold' 來決定哪些像素區域要出現，那些要消失 (當 Alpha <= Alpha-Clip-Threshold 會被 Fragment Shader 放棄填入顏色)；\n參考消失範圍計算適當的自發光顏色；\n\n在 Graph Inspector 中需要啟用 'Alpha Clip' 選項；另外為了能看到背對鏡頭的幾何也有正常進行 Dissolve 效果處理，所以啟用 'Two Sided' 選項。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 786.0,
+        "x": 796.0,
         "y": 374.0,
         "width": 392.0,
-        "height": 63.213623046875
+        "height": 159.73532104492188
     },
     "m_Group": {
         "m_Id": ""
@@ -1786,17 +1873,17 @@
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "c2d2fbb3023043dc8b0167a97f32f022",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "63164c80455f484ebbdbe499abaef135"
     },
     "m_Name": "Add",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -373.0,
-            "y": 510.0,
+            "x": -356.0,
+            "y": 178.00001525878907,
             "width": 126.0,
-            "height": 118.0
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -1824,17 +1911,17 @@
     "m_Type": "UnityEditor.ShaderGraph.NoiseNode",
     "m_ObjectId": "c419bf9227624bb8843bc465897bfe7f",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "63164c80455f484ebbdbe499abaef135"
     },
     "m_Name": "Simple Noise",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -373.0000305175781,
-            "y": 219.99996948242188,
+            "x": -308.0000305175781,
+            "y": 8.000006675720215,
             "width": 147.0,
-            "height": 118.0
+            "height": 117.99999237060547
         }
     },
     "m_Slots": [
@@ -2097,6 +2184,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "eed0dbff09be45f8b329f35c4d606ea7",
+    "m_Title": "Alpha = 'Simple Noise'",
+    "m_Content": "使用 Simple Noise 亂數功能節點，直接指定給 Fragment Context 中的 Alpha 結果。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -407.0,
+        "y": -55.0,
+        "width": 266.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "63164c80455f484ebbdbe499abaef135"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "f3542edb90f64016a35868a0056d68df",
     "m_Group": {
@@ -2140,8 +2247,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -681.0,
-            "y": 510.0,
+            "x": -680.9999389648438,
+            "y": 338.0,
             "width": 186.0,
             "height": 142.0
         }

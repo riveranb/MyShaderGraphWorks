@@ -106,16 +106,61 @@
             "m_Id": "a90a16eb95fe4b2da54b2abbdfc412a1"
         },
         {
-            "m_Id": "8065c69b7574406bb94255a5a93cf084"
+            "m_Id": "1a41209872a741f09c022bd763d4af25"
+        },
+        {
+            "m_Id": "0bdfafc306e04256ad64d54a41bf0013"
         }
     ],
-    "m_GroupDatas": [],
+    "m_GroupDatas": [
+        {
+            "m_Id": "8cbe3c267e4443c4a9c125fdb10379f1"
+        },
+        {
+            "m_Id": "021cae9efcd14c1ab4cf4a1ebc7b18e8"
+        },
+        {
+            "m_Id": "12d768843e3c4a05811d70218d95a994"
+        }
+    ],
     "m_StickyNoteDatas": [
         {
             "m_Id": "11c99f57496d4571b837ed7e3625169c"
+        },
+        {
+            "m_Id": "5ed46b0b8fc2499f80b574c6b8744725"
+        },
+        {
+            "m_Id": "30d3dbccba7e431aaa6459a44f4bf930"
+        },
+        {
+            "m_Id": "80693dbf0750499b9078a3799bcf56ef"
+        },
+        {
+            "m_Id": "be0a4534dd074548906bfb97d95943f0"
+        },
+        {
+            "m_Id": "9b2320d5a4694e8994a781a490f911b8"
+        },
+        {
+            "m_Id": "a062b2ec8084437b84a0f037cc94f69d"
         }
     ],
     "m_Edges": [
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "0bdfafc306e04256ad64d54a41bf0013"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "770a6821d16249819743caaff13ab928"
+                },
+                "m_SlotId": 0
+            }
+        },
         {
             "m_OutputSlot": {
                 "m_Node": {
@@ -126,6 +171,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "374e92d0ee1541f591811e43167b8d67"
+                },
+                "m_SlotId": 2
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "1a41209872a741f09c022bd763d4af25"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "a90a16eb95fe4b2da54b2abbdfc412a1"
                 },
                 "m_SlotId": 2
             }
@@ -149,13 +208,13 @@
                 "m_Node": {
                     "m_Id": "374e92d0ee1541f591811e43167b8d67"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 4
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "ecf718ac74e5444f83edb60140059ab7"
+                    "m_Id": "a90a16eb95fe4b2da54b2abbdfc412a1"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             }
         },
         {
@@ -167,9 +226,9 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "a90a16eb95fe4b2da54b2abbdfc412a1"
+                    "m_Id": "ecf718ac74e5444f83edb60140059ab7"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 0
             }
         },
         {
@@ -212,20 +271,6 @@
                     "m_Id": "dac6da71c9a042c0bff071f3fb49f0e4"
                 },
                 "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "8065c69b7574406bb94255a5a93cf084"
-                },
-                "m_SlotId": 1
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "a90a16eb95fe4b2da54b2abbdfc412a1"
-                },
-                "m_SlotId": 2
             }
         },
         {
@@ -343,20 +388,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "b7363c53dcd4419a93a72c09c6f4705d"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "770a6821d16249819743caaff13ab928"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "bd10617f6ff54f1f9784bc45c75b4aa2"
                 },
                 "m_SlotId": 3
@@ -392,20 +423,6 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "fb8f516db3d949d7a66c7a35b3368e4a"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "ec19247e7e5143e48cce5c41ac9eacee"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "8065c69b7574406bb94255a5a93cf084"
                 },
                 "m_SlotId": 0
             }
@@ -520,6 +537,17 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "021cae9efcd14c1ab4cf4a1ebc7b18e8",
+    "m_Title": "添加邊緣反光 Rim Lighting 效果至自發光顏色 (Emission)",
+    "m_Position": {
+        "x": -1321.0001220703125,
+        "y": -10.000019073486329
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "02c96da58e9c4a3a9a707302d1eb642d",
     "m_Group": {
@@ -626,6 +654,41 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "0bdfafc306e04256ad64d54a41bf0013",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -162.39993286132813,
+            "y": 237.6000213623047,
+            "width": 107.19999694824219,
+            "height": 33.600006103515628
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "33749cd830144cc89ce470dd896dca02"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": false,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "6160632eb9e64692bbbee36d73826edc"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "11c99f57496d4571b837ed7e3625169c",
     "m_Title": "Master Stack",
@@ -646,18 +709,29 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "12d768843e3c4a05811d70218d95a994",
+    "m_Title": "亂數影響自發光 Emission 強度",
+    "m_Position": {
+        "x": -1314.0,
+        "y": 528.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.TilingAndOffsetNode",
     "m_ObjectId": "157b7d348b584bf096fd28e66dc47bd5",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "8cbe3c267e4443c4a9c125fdb10379f1"
     },
     "m_Name": "Tiling And Offset",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1523.0001220703125,
-            "y": 495.0,
+            "x": -1845.0,
+            "y": 504.0,
             "width": 155.0,
             "height": 142.0
         }
@@ -723,6 +797,50 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.TimeNode",
+    "m_ObjectId": "1a41209872a741f09c022bd763d4af25",
+    "m_Group": {
+        "m_Id": "12d768843e3c4a05811d70218d95a994"
+    },
+    "m_Name": "Time",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1306.0,
+            "y": 723.0,
+            "width": 126.0,
+            "height": 173.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "5941d1352ea741c6a4c5edf2b6c58b98"
+        },
+        {
+            "m_Id": "da08cf6ee6474d84881d90703072ba4f"
+        },
+        {
+            "m_Id": "1b5cf6f6bb014026ac72279bb171ee05"
+        },
+        {
+            "m_Id": "aac18bc91420481f9f4563ad248c29da"
+        },
+        {
+            "m_Id": "adfd526f16114685b590e31b4c9a6ff0"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": false,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "1b057826172e4fcc8c30705dc16353c5",
     "m_Id": 2,
@@ -736,6 +854,21 @@
     "m_Labels": [
         "Y"
     ]
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "1b5cf6f6bb014026ac72279bb171ee05",
+    "m_Id": 2,
+    "m_DisplayName": "Cosine Time",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Cosine Time",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -1034,6 +1167,51 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "30d3dbccba7e431aaa6459a44f4bf930",
+    "m_Title": "",
+    "m_Content": "使用 RandomRange 節點計算位於 [0 ~ 1] 之間的亂數，\n將 float2(全息圖案採樣顏色.r, Frame-Time) 作為 RandomRange 節點的輸入 (Seed)\n然後使用 Comparison 與 Branch 節點進行條件判斷：\nif (RandomRange > 0.9) // True\n{\n    Out = 1.2;\n}\nelse // False\n{\n    Out = 0.8f;\n}",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1006.0,
+        "y": 579.0,
+        "width": 457.0,
+        "height": 165.0
+    },
+    "m_Group": {
+        "m_Id": "12d768843e3c4a05811d70218d95a994"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "33749cd830144cc89ce470dd896dca02",
+    "m_Id": 0,
+    "m_DisplayName": "Color",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "33a147ac048b48dfafeec57cf79c2e42",
     "m_Id": 3,
@@ -1058,17 +1236,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SampleTexture2DNode",
     "m_ObjectId": "374e92d0ee1541f591811e43167b8d67",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "8cbe3c267e4443c4a9c125fdb10379f1"
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1292.0,
-            "y": 403.0,
-            "width": 184.0,
-            "height": 253.00001525878907
+            "x": -1656.0,
+            "y": 419.2000427246094,
+            "width": 186.40003967285157,
+            "height": 250.39996337890626
         }
     },
     "m_Slots": [
@@ -1299,16 +1477,16 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "4d552188aaca4107a822bca3b553fd90",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "021cae9efcd14c1ab4cf4a1ebc7b18e8"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1071.0,
-            "y": 67.99999237060547,
-            "width": 159.99998474121095,
+            "x": -1292.0,
+            "y": 127.99999237060547,
+            "width": 160.00001525878907,
             "height": 34.0
         }
     },
@@ -1414,20 +1592,35 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "5941d1352ea741c6a4c5edf2b6c58b98",
+    "m_Id": 0,
+    "m_DisplayName": "Time",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Time",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "5af200b538304f2baec4e0ae5826cc02",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "8cbe3c267e4443c4a9c125fdb10379f1"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1509.0001220703125,
-            "y": 443.0000305175781,
-            "width": 151.0,
-            "height": 34.0
+            "x": -1830.4000244140625,
+            "y": 454.3999938964844,
+            "width": 152.0,
+            "height": 33.600006103515628
         }
     },
     "m_Slots": [
@@ -1522,6 +1715,26 @@
         "g": 0.0,
         "b": 0.0,
         "a": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "5ed46b0b8fc2499f80b574c6b8744725",
+    "m_Title": "",
+    "m_Content": "因為此處計算像素顏色相關資訊 (Emission)，\n故皆發生在 Fragment Shader 階段，\n這裡取得像素的點位置座標，挑鏡頭空間位置資訊。\nUV = Position.xy * float2(1, 1) + float2(Frame-Time * 全息捲動速度);\n使用此 UV 對全息投影圖案進行採樣貼圖顏色。\n",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1978.0,
+        "y": 631.0,
+        "width": 393.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "8cbe3c267e4443c4a9c125fdb10379f1"
     }
 }
 
@@ -1637,15 +1850,15 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "67d1c0c81bfd428b87534c2bba819afd",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "021cae9efcd14c1ab4cf4a1ebc7b18e8"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -828.0001220703125,
-            "y": 305.0,
+            "x": -1102.0001220703125,
+            "y": 335.0,
             "width": 130.0,
             "height": 118.00000762939453
         }
@@ -1899,36 +2112,21 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.RedirectNodeData",
-    "m_ObjectId": "8065c69b7574406bb94255a5a93cf084",
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "80693dbf0750499b9078a3799bcf56ef",
+    "m_Title": "邊緣反光 Fresnel 效應",
+    "m_Content": "Fresnel Effect 節點計算邊緣反光強度。\n可參考這篇好文章解釋\nhttps://reurl.cc/OpXzNr\n簡單說即模擬越邊緣越亮的效應。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1243.0,
+        "y": 49.0,
+        "width": 243.0,
+        "height": 100.0
+    },
     "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Redirect Node",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -1160.7999267578125,
-            "y": 731.2000122070313,
-            "width": 55.999996185302737,
-            "height": 24.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "c3ef2ed152d3426a8cd29e92214fc49e"
-        },
-        {
-            "m_Id": "a258069b17314fda90438d4399f38d98"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
+        "m_Id": "021cae9efcd14c1ab4cf4a1ebc7b18e8"
     }
 }
 
@@ -1937,17 +2135,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "871e0f280af64d6086cdb82ea11c37ce",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "8cbe3c267e4443c4a9c125fdb10379f1"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1955.0001220703125,
-            "y": 577.0,
-            "width": 142.0,
-            "height": 34.000003814697269
+            "x": -2276.0,
+            "y": 454.3999938964844,
+            "width": 142.39990234375,
+            "height": 33.600006103515628
         }
     },
     "m_Slots": [
@@ -1980,6 +2178,17 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "8cbe3c267e4443c4a9c125fdb10379f1",
+    "m_Title": "(像素)點位置資訊隨時間影響改變全息貼圖 UV",
+    "m_Position": {
+        "x": -2301.600341796875,
+        "y": 361.60009765625
+    }
 }
 
 {
@@ -2145,6 +2354,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "9b2320d5a4694e8994a781a490f911b8",
+    "m_Title": "全息投影透明度",
+    "m_Content": "因準備的全息投影貼圖是灰階的，\n因此將灰階強度 (red channel) 直接作為 Alpha 結果。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -170.0,
+        "y": 519.0,
+        "width": 304.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
     "m_ObjectId": "9c327b3c52274ed38f38b4e46f2893c0",
     "m_Guid": {
@@ -2171,17 +2400,17 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "9c9f55e6f2c949c5afd6419e29732f6c",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "8cbe3c267e4443c4a9c125fdb10379f1"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1777.0001220703125,
-            "y": 538.0,
-            "width": 126.00000762939453,
-            "height": 118.0
+            "x": -2098.39990234375,
+            "y": 563.2000122070313,
+            "width": 125.599853515625,
+            "height": 117.5999755859375
         }
     },
     "m_Slots": [
@@ -2209,17 +2438,17 @@
     "m_Type": "UnityEditor.ShaderGraph.OneMinusNode",
     "m_ObjectId": "9e64553dcdb2418db90d7e600d1887b5",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "021cae9efcd14c1ab4cf4a1ebc7b18e8"
     },
     "m_Name": "One Minus",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1065.0,
-            "y": 329.0000305175781,
-            "width": 132.0,
-            "height": 94.0
+            "x": -1280.0001220703125,
+            "y": 359.0,
+            "width": 132.00001525878907,
+            "height": 94.00000762939453
         }
     },
     "m_Slots": [
@@ -2244,17 +2473,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PositionNode",
     "m_ObjectId": "9ffca8d7c648414fa4f81a98c3164c95",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "8cbe3c267e4443c4a9c125fdb10379f1"
     },
     "m_Name": "Position",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1777.0001220703125,
-            "y": 386.0000305175781,
-            "width": 206.0,
-            "height": 132.0
+            "x": -2098.39990234375,
+            "y": 424.79998779296877,
+            "width": 205.599853515625,
+            "height": 130.4000244140625
         }
     },
     "m_Slots": [
@@ -2270,6 +2499,26 @@
         "m_SerializableColors": []
     },
     "m_Space": 1
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "a062b2ec8084437b84a0f037cc94f69d",
+    "m_Title": "產生自發光亂數閃爍效果",
+    "m_Content": "前面計算好的自發光顏色乘上亂數變化的強度 (0.8 或 1.2)，\n產生忽亮忽暗的閃爍效果",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -438.0,
+        "y": 313.0,
+        "width": 323.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {
@@ -2307,30 +2556,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
-    "m_ObjectId": "a258069b17314fda90438d4399f38d98",
-    "m_Id": 1,
-    "m_DisplayName": "",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    }
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "a60c2497333b490aa7f5321f82c0e8a7",
     "m_Id": 3,
@@ -2349,15 +2574,15 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector2Node",
     "m_ObjectId": "a90a16eb95fe4b2da54b2abbdfc412a1",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "12d768843e3c4a05811d70218d95a994"
     },
     "m_Name": "Vector 2",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1068.0,
-            "y": 555.0,
+            "x": -1139.0,
+            "y": 693.0000610351563,
             "width": 128.0,
             "height": 101.0
         }
@@ -2384,6 +2609,36 @@
         "x": 0.0,
         "y": 0.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "aac18bc91420481f9f4563ad248c29da",
+    "m_Id": 3,
+    "m_DisplayName": "Delta Time",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Delta Time",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "adfd526f16114685b590e31b4c9a6ff0",
+    "m_Id": 4,
+    "m_DisplayName": "Smooth Delta",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Smooth Delta",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -2436,17 +2691,17 @@
     "m_Type": "UnityEditor.ShaderGraph.FresnelNode",
     "m_ObjectId": "b088c6494a474bae8e089839c2ea29ce",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "021cae9efcd14c1ab4cf4a1ebc7b18e8"
     },
     "m_Name": "Fresnel Effect",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1075.0,
-            "y": 118.00000762939453,
+            "x": -1296.0001220703125,
+            "y": 177.0,
             "width": 164.0,
-            "height": 141.99998474121095
+            "height": 142.0
         }
     },
     "m_Slots": [
@@ -2582,15 +2837,15 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "b7363c53dcd4419a93a72c09c6f4705d",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "021cae9efcd14c1ab4cf4a1ebc7b18e8"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1018.0000610351563,
-            "y": 271.0,
+            "x": -1256.0001220703125,
+            "y": 325.0,
             "width": 107.0,
             "height": 34.0
         }
@@ -2617,16 +2872,16 @@
     "m_Type": "UnityEditor.ShaderGraph.BranchNode",
     "m_ObjectId": "bd10617f6ff54f1f9784bc45c75b4aa2",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "12d768843e3c4a05811d70218d95a994"
     },
     "m_Name": "Branch",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -507.0,
-            "y": 588.0,
-            "width": 170.00001525878907,
+            "x": -554.0,
+            "y": 723.0,
+            "width": 170.0,
             "height": 142.0
         }
     },
@@ -2650,6 +2905,26 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "be0a4534dd074548906bfb97d95943f0",
+    "m_Title": "",
+    "m_Content": "邊緣光顏色 = RimLightColor * Fresnel-Effect;\n計算基本自發光顏色：\nEmission = (1 - 全息投影圖案採樣顏色) * Color + 邊緣光顏色;",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -943.0,
+        "y": 185.0,
+        "width": 353.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "021cae9efcd14c1ab4cf4a1ebc7b18e8"
     }
 }
 
@@ -2731,30 +3006,6 @@
         "w": 0.0
     },
     "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
-    "m_ObjectId": "c3ef2ed152d3426a8cd29e92214fc49e",
-    "m_Id": 0,
-    "m_DisplayName": "",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    }
 }
 
 {
@@ -2844,18 +3095,33 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "da08cf6ee6474d84881d90703072ba4f",
+    "m_Id": 1,
+    "m_DisplayName": "Sine Time",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Sine Time",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "dac6da71c9a042c0bff071f3fb49f0e4",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "021cae9efcd14c1ab4cf4a1ebc7b18e8"
     },
     "m_Name": "Add",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -621.0000610351563,
-            "y": 68.00000762939453,
+            "x": -932.0000610351563,
+            "y": 241.0,
             "width": 130.0,
             "height": 118.00000762939453
         }
@@ -2885,15 +3151,15 @@
     "m_Type": "UnityEditor.ShaderGraph.RandomRangeNode",
     "m_ObjectId": "daffcb26873b46938e448a07a4fac646",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "12d768843e3c4a05811d70218d95a994"
     },
     "m_Name": "Random Range",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -889.0000610351563,
-            "y": 589.0,
+            "x": -976.0,
+            "y": 723.0,
             "width": 147.0,
             "height": 142.0
         }
@@ -2988,15 +3254,15 @@
     "m_Type": "UnityEditor.ShaderGraph.TimeNode",
     "m_ObjectId": "ec19247e7e5143e48cce5c41ac9eacee",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "8cbe3c267e4443c4a9c125fdb10379f1"
     },
     "m_Name": "Time",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1939.0001220703125,
-            "y": 690.0000610351563,
+            "x": -2276.0,
+            "y": 557.0,
             "width": 126.00000762939453,
             "height": 173.00001525878907
         }
@@ -3088,15 +3354,15 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "f1262d96df514338a2d30f0e1dc147b9",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "021cae9efcd14c1ab4cf4a1ebc7b18e8"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -828.0,
-            "y": 68.0,
+            "x": -1102.0001220703125,
+            "y": 131.0,
             "width": 130.0,
             "height": 118.00000762939453
         }
@@ -3318,16 +3584,16 @@
     "m_Type": "UnityEditor.ShaderGraph.ComparisonNode",
     "m_ObjectId": "fb8f516db3d949d7a66c7a35b3368e4a",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "12d768843e3c4a05811d70218d95a994"
     },
     "m_Name": "Comparison",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -697.9999389648438,
-            "y": 588.0,
-            "width": 145.00001525878907,
+            "x": -771.0,
+            "y": 723.0,
+            "width": 145.0,
             "height": 137.0
         }
     },

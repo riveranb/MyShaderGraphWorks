@@ -131,7 +131,11 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "709f9748214a4c5c9854721b95e7b25e"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -2244,6 +2248,26 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "709f9748214a4c5c9854721b95e7b25e",
+    "m_Title": "Master Stack",
+    "m_Content": "參考\nhttps://www.youtube.com/watch?v=IC9g5hlfV6o\n\nMaterial: 'Lit'\n",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 3.200000047683716,
+        "y": -85.5999984741211,
+        "width": 302.3999938964844,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": ""
     }
 }
 

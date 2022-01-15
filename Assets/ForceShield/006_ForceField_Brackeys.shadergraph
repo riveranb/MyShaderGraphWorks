@@ -124,10 +124,44 @@
             "m_Id": "075acd8c4dc24b7cab7fe29848e1d1e7"
         }
     ],
-    "m_GroupDatas": [],
+    "m_GroupDatas": [
+        {
+            "m_Id": "65c9a590905b4ee88cb9cbb08b867452"
+        },
+        {
+            "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
+        },
+        {
+            "m_Id": "1b86b6809c794ddf97cfd38b830ca121"
+        }
+    ],
     "m_StickyNoteDatas": [
         {
             "m_Id": "26adeaceb1344b42b54bc6caa1d3a78d"
+        },
+        {
+            "m_Id": "fe84dd12db64438e8cfcf3ba402bce37"
+        },
+        {
+            "m_Id": "672ccb7c67c647bca36221a10b4eae67"
+        },
+        {
+            "m_Id": "12165d95f19d4e5a802441fc8e9d1ccf"
+        },
+        {
+            "m_Id": "037c7a27fc3f412f886dce98f0f2f56f"
+        },
+        {
+            "m_Id": "065adfa0248d46c79ac459afeb86ba9e"
+        },
+        {
+            "m_Id": "7d4888ab3afe460488acbd9387e93219"
+        },
+        {
+            "m_Id": "0aa1aa2ac4ca4bdf9ecafad87eaf8d0d"
+        },
+        {
+            "m_Id": "c9a3bbd59a5a450088824df6fc67046f"
         }
     ],
     "m_Edges": [
@@ -531,20 +565,40 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "037c7a27fc3f412f886dce98f0f2f56f",
+    "m_Title": "",
+    "m_Content": "使用 'Smoothstep' 節點\n說明參考 (圖): http://www.fundza.com/rman_shaders/smoothstep/\n計算由 Edge1 ( = 0) 至 Edge2 ( = 1) 平滑曲線內插結果。\n權重參數，In，由前面的 '靠近程度' 結果代入。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1460.0,
+        "y": 604.0,
+        "width": 392.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.TilingAndOffsetNode",
     "m_ObjectId": "052aa52c97784252b24f12c14c33d5c0",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "65c9a590905b4ee88cb9cbb08b867452"
     },
     "m_Name": "Tiling And Offset",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1024.0001220703125,
-            "y": -187.0,
-            "width": 155.00001525878907,
-            "height": 142.0
+            "x": -1037.60009765625,
+            "y": -203.19998168945313,
+            "width": 156.80003356933595,
+            "height": 141.59999084472657
         }
     },
     "m_Slots": [
@@ -572,20 +626,40 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "065adfa0248d46c79ac459afeb86ba9e",
+    "m_Title": "邊緣反光 Fresnel 效應",
+    "m_Content": "Fresnel Effect 節點計算邊緣反光強度。\n可參考這篇好文章解釋\nhttps://reurl.cc/OpXzNr\n簡單說即模擬越邊緣越亮的效應。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1304.0,
+        "y": 128.8000030517578,
+        "width": 243.199951171875,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "1b86b6809c794ddf97cfd38b830ca121"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "0682d4a49009429594348942eae45a5e",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "65c9a590905b4ee88cb9cbb08b867452"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1243.0001220703125,
-            "y": -104.00000762939453,
-            "width": 126.00000762939453,
-            "height": 118.00000762939453
+            "x": -1256.800048828125,
+            "y": -120.0,
+            "width": 126.40001678466797,
+            "height": 117.59999084472656
         }
     },
     "m_Slots": [
@@ -613,17 +687,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "075acd8c4dc24b7cab7fe29848e1d1e7",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "1b86b6809c794ddf97cfd38b830ca121"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -909.0,
-            "y": 98.0,
-            "width": 142.0,
-            "height": 34.0
+            "x": -936.800048828125,
+            "y": 133.60000610351563,
+            "width": 143.20001220703126,
+            "height": 33.59999084472656
         }
     },
     "m_Slots": [
@@ -640,6 +714,26 @@
     },
     "m_Property": {
         "m_Id": "c42d339c68034350adce0b07e3016498"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "0aa1aa2ac4ca4bdf9ecafad87eaf8d0d",
+    "m_Title": "",
+    "m_Content": "採樣 '能量圖案' 貼圖決定光罩圖案。\n使用 'TilingAndOffset' 節點調整 UV 動態：\nUV = UV * 能量圖重複倍率 + (Frame-Time * 圖案流動速度);",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1438.4000244140625,
+        "y": -230.39999389648438,
+        "width": 394.0,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "65c9a590905b4ee88cb9cbb08b867452"
     }
 }
 
@@ -741,6 +835,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "12165d95f19d4e5a802441fc8e9d1ccf",
+    "m_Title": "Fragment Depth - Scene Depth = 場景邊緣距離",
+    "m_Content": "像素位置景深 = ScreenPosition.a;\n原場景景深 = SceneDepth;\n兩者間距離 = SceneDepth - ScreenPosition.a;\n// 為之後控制場景邊緣交接區域的明顯程度，讓像素景深額外加上一個外部偏差參數\n交接間距 = SceneDepth - (ScreenPosition.a + 光罩偵測距離偏差);\n// 交接間距 < 0，代表像素景深較遠\n// 交接間距 > 0，代表像素景深較近\n\n// 為找到交界邊緣，用 'OneMinus' 節點計算 (1 - 交接間距) 表示邊緣接近程度\n靠近程度 = 1 - 交接間距;\n// 靠近程度 > 1 代表像素景深較遠\n// 靠近程度 = 1 代表相同景深\n// 靠近程度 = 0 代表像素景深較近並且距離長度單位 1\n// 因此 [1 ~ 0] 剛好可表示近至遠的程度值\n\n",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1571.2000732421875,
+        "y": 824.0,
+        "width": 477.5999755859375,
+        "height": 224.0
+    },
+    "m_Group": {
+        "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "13eb1d5a37c2492da3219258d64088cc",
     "m_Group": {
@@ -790,17 +904,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "1937450440d84a79a31a923c460614d9",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "65c9a590905b4ee88cb9cbb08b867452"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1272.0001220703125,
-            "y": -144.00001525878907,
-            "width": 155.00001525878907,
-            "height": 34.0
+            "x": -1285.60009765625,
+            "y": -160.0,
+            "width": 156.80003356933595,
+            "height": 33.59999465942383
         }
     },
     "m_Slots": [
@@ -825,17 +939,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SmoothstepNode",
     "m_ObjectId": "19dcc0ed50714d01aa868e4a8fe38965",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
     },
     "m_Name": "Smoothstep",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1137.0,
-            "y": 233.0,
-            "width": 153.0,
-            "height": 142.0
+            "x": -1219.2001953125,
+            "y": 659.2000122070313,
+            "width": 153.5999755859375,
+            "height": 142.39996337890626
         }
     },
     "m_Slots": [
@@ -863,20 +977,31 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "1b86b6809c794ddf97cfd38b830ca121",
+    "m_Title": "添加邊緣反光效應",
+    "m_Position": {
+        "x": 10.0,
+        "y": 10.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "238a1c269d5a422ca82e1c8a36686360",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
     },
     "m_Name": "Add",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1663.9998779296875,
-            "y": 332.0,
-            "width": 126.0,
-            "height": 118.0
+            "x": -1745.60009765625,
+            "y": 804.7999877929688,
+            "width": 125.60009765625,
+            "height": 118.4000244140625
         }
     },
     "m_Slots": [
@@ -904,17 +1029,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "23d7a8f57b5c415c9550c3f13a0c10f3",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1869.0,
-            "y": 433.0,
-            "width": 164.0,
-            "height": 34.0
+            "x": -1946.4000244140625,
+            "y": 888.800048828125,
+            "width": 164.7999267578125,
+            "height": 34.4000244140625
         }
     },
     "m_Slots": [
@@ -1270,17 +1395,17 @@
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "44622c209dfa4db0aed4a2688d57dcd1",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "1b86b6809c794ddf97cfd38b830ca121"
     },
     "m_Name": "Add",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -747.9999389648438,
-            "y": 58.99999237060547,
-            "width": 208.0,
-            "height": 302.0
+            "x": -758.4000244140625,
+            "y": 167.99998474121095,
+            "width": 125.5999755859375,
+            "height": 117.60000610351563
         }
     },
     "m_Slots": [
@@ -1475,17 +1600,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "522a67df825d4fdbacf5aa48fd79cfac",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "1b86b6809c794ddf97cfd38b830ca121"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1311.0,
-            "y": 168.99998474121095,
-            "width": 149.0,
-            "height": 34.0
+            "x": -1312.8001708984375,
+            "y": 285.6000061035156,
+            "width": 151.20008850097657,
+            "height": 33.600006103515628
         }
     },
     "m_Slots": [
@@ -1510,17 +1635,17 @@
     "m_Type": "UnityEditor.ShaderGraph.ScreenPositionNode",
     "m_ObjectId": "523a41b17aba445486deeb2df0e9e5e3",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
     },
     "m_Name": "Screen Position",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2009.0,
-            "y": 282.0,
-            "width": 145.00001525878907,
-            "height": 130.0
+            "x": -2091.199951171875,
+            "y": 708.0,
+            "width": 144.7999267578125,
+            "height": 128.79998779296876
         }
     },
     "m_Slots": [
@@ -1543,17 +1668,17 @@
     "m_Type": "UnityEditor.ShaderGraph.OneMinusNode",
     "m_ObjectId": "52bc96550746483580dc3949344445ae",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
     },
     "m_Name": "One Minus",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1336.0,
-            "y": 285.0,
+            "x": -1419.2000732421875,
+            "y": 711.2000122070313,
             "width": 128.0,
-            "height": 94.0
+            "height": 94.39996337890625
         }
     },
     "m_Slots": [
@@ -1694,17 +1819,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SubtractNode",
     "m_ObjectId": "5fd9432f6e584d878c075195152b6e1b",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
     },
     "m_Name": "Subtract",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1491.0,
-            "y": 282.0,
-            "width": 126.0,
-            "height": 118.0
+            "x": -1572.800048828125,
+            "y": 708.0,
+            "width": 125.5999755859375,
+            "height": 118.4000244140625
         }
     },
     "m_Slots": [
@@ -1732,17 +1857,17 @@
     "m_Type": "UnityEditor.ShaderGraph.TimeNode",
     "m_ObjectId": "608eb5be407f451db16764f734050974",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "65c9a590905b4ee88cb9cbb08b867452"
     },
     "m_Name": "Time",
     "m_DrawState": {
-        "m_Expanded": true,
+        "m_Expanded": false,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1415.2000732421875,
-            "y": -187.1999969482422,
-            "width": 128.0,
-            "height": 172.8000030517578
+            "x": -1380.800048828125,
+            "y": -120.0,
+            "width": 80.800048828125,
+            "height": 76.80000305175781
         }
     },
     "m_Slots": [
@@ -1820,6 +1945,17 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "65c9a590905b4ee88cb9cbb08b867452",
+    "m_Title": "能量護罩主要圖案",
+    "m_Position": {
+        "x": 10.0,
+        "y": 10.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "6638170ac9804e7bb42e4c9524e3be49",
     "m_Id": 0,
@@ -1831,6 +1967,26 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "672ccb7c67c647bca36221a10b4eae67",
+    "m_Title": "Depth Buffer 螢幕深度資料",
+    "m_Content": "'SceneDepth' 節點：\n從螢幕深度貼圖採樣得到當前像素的已知螢幕深度，\n即上一次填上的螢幕深度資訊，\n即代表當前已記錄的(不透明物體)世界深度。\nSampling Mode 挑 'Eye' 即鏡頭空間深度 (Camera-Space depth)。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1841.60009765625,
+        "y": 519.2000122070313,
+        "width": 361.60009765625,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
+    }
 }
 
 {
@@ -1871,17 +2027,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "696d4a85fb6e4173931c4e5c87c42948",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "65c9a590905b4ee88cb9cbb08b867452"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -998.0001220703125,
-            "y": -232.0,
-            "width": 129.00001525878907,
-            "height": 34.0
+            "x": -1011.199951171875,
+            "y": -247.99998474121095,
+            "width": 130.40000915527345,
+            "height": 33.60000228881836
         }
     },
     "m_Slots": [
@@ -1921,17 +2077,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "7028276d6aef41c98fe73bd90437c0b6",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "65c9a590905b4ee88cb9cbb08b867452"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1430.0,
-            "y": -20.0,
-            "width": 142.0,
-            "height": 34.0
+            "x": -1443.2000732421875,
+            "y": -36.000003814697269,
+            "width": 143.2000732421875,
+            "height": 33.59999465942383
         }
     },
     "m_Slots": [
@@ -2034,17 +2190,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SplitNode",
     "m_ObjectId": "7cdeaa1a903e4973b7a9a2674e76b336",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
     },
     "m_Name": "Split",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1824.9998779296875,
-            "y": 263.0,
-            "width": 120.00000762939453,
-            "height": 149.0
+            "x": -1905.60009765625,
+            "y": 730.4000244140625,
+            "width": 120.0,
+            "height": 149.5999755859375
         }
     },
     "m_Slots": [
@@ -2070,6 +2226,26 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "7d4888ab3afe460488acbd9387e93219",
+    "m_Title": "",
+    "m_Content": "因為能量光罩在沒有與場景有交界處也希望表現出亮光，\n使用 Fresnel Effect 節點來加上光球邊緣反光強度，\n此外設定 '填滿結實程度' 外部參數來表現光罩中心結實飽和度。\n整體發亮強度 = (場景)靠近程度 + 邊緣反光強度 + '填滿結實程度';",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -966.3999633789063,
+        "y": 288.79998779296877,
+        "width": 351.199951171875,
+        "height": 72.02267456054688
+    },
+    "m_Group": {
+        "m_Id": "1b86b6809c794ddf97cfd38b830ca121"
     }
 }
 
@@ -2378,17 +2554,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SampleTexture2DNode",
     "m_ObjectId": "a2078f7176e74c1a81eb2dc90a8d70ef",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "65c9a590905b4ee88cb9cbb08b867452"
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -806.0001220703125,
-            "y": -232.00001525878907,
-            "width": 184.00001525878907,
-            "height": 253.00001525878907
+            "x": -819.199951171875,
+            "y": -247.99998474121095,
+            "width": 187.1999969482422,
+            "height": 249.59999084472657
         }
     },
     "m_Slots": [
@@ -2713,17 +2889,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SceneDepthNode",
     "m_ObjectId": "c3f74891dd1946568b400de5acb0d293",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
     },
     "m_Name": "Scene Depth",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1683.0,
-            "y": 186.00001525878907,
-            "width": 145.00001525878907,
-            "height": 113.0
+            "x": -1764.800048828125,
+            "y": 612.0,
+            "width": 144.800048828125,
+            "height": 111.99999237060547
         }
     },
     "m_Slots": [
@@ -2831,6 +3007,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "c9a3bbd59a5a450088824df6fc67046f",
+    "m_Title": "",
+    "m_Content": "(能量圖案顏色 * 光罩亮光強度計算結果) 決定最終 Alpha 值。\n由 Alpha 值表現整體能量光罩透明度與高強光度。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -332.0,
+        "y": 139.1999969482422,
+        "width": 342.3999938964844,
+        "height": 100.00001525878906
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "cac8b11fded24cde94dc88b4d2d6ab78",
     "m_Id": 2,
@@ -2864,17 +3060,17 @@
     "m_Type": "UnityEditor.ShaderGraph.FresnelNode",
     "m_ObjectId": "cc51057451af47b9b6ec9c1d222b2de5",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "1b86b6809c794ddf97cfd38b830ca121"
     },
     "m_Name": "Fresnel Effect",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1148.0,
-            "y": 59.000003814697269,
-            "width": 164.0,
-            "height": 142.0
+            "x": -1130.4000244140625,
+            "y": 185.6000213623047,
+            "width": 164.79998779296876,
+            "height": 141.60000610351563
         }
     },
     "m_Slots": [
@@ -2913,6 +3109,17 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "d1c4b4354dee4dd79f9c6d26b6117119",
+    "m_Title": "找出護罩與場景交接區域",
+    "m_Position": {
+        "x": -2118.400146484375,
+        "y": 461.5999755859375
+    }
 }
 
 {
@@ -2965,7 +3172,7 @@
     "m_Type": "UnityEditor.ShaderGraph.AddNode",
     "m_ObjectId": "e2ee764b449142c9af60611f3707bd1f",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "1b86b6809c794ddf97cfd38b830ca121"
     },
     "m_Name": "Add",
     "m_DrawState": {
@@ -3446,6 +3653,26 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "fe84dd12db64438e8cfcf3ba402bce37",
+    "m_Title": "'ScreenPosition' Raw",
+    "m_Content": "參考解釋說明：\nhttps://bit.ly/3thzTdo\nRaw Mode 中 .a/.w 代表的就是鏡頭空間中的深度資訊。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -2093.60009765625,
+        "y": 627.2000122070313,
+        "width": 235.2000732421875,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "d1c4b4354dee4dd79f9c6d26b6117119"
     }
 }
 

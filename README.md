@@ -17,3 +17,9 @@ Use Universal Render Pipeline (Shader Graph) v10.7
 
 ### Force Shield
 ![demo pic](https://github.com/riveranb/MyShaderGraphWorks/blob/main/Recordings/20211121_ForceShield_001.png)
+
+### Sprite Outline
+![demo pic](https://github.com/riveranb/MyShaderGraphWorks/blob/main/Recordings/20220115_SpriteOutline_001.png)
+
+### Snow Environment
+![demo pic](https://github.com/riveranb/MyShaderGraphWorks/blob/main/Recordings/20220115_Snowy_001.gif)

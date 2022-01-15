@@ -155,6 +155,9 @@
         },
         {
             "m_Id": "eac13f0c67054607998cb857e3272320"
+        },
+        {
+            "m_Id": "51dc59f7d9154d7890e78f582aa0eeb5"
         }
     ],
     "m_GroupDatas": [
@@ -361,7 +364,7 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "b860fad0ebf54e2b9642f02d8e5bc225"
+                    "m_Id": "51dc59f7d9154d7890e78f582aa0eeb5"
                 },
                 "m_SlotId": 0
             }
@@ -375,7 +378,7 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "e19f626574664879b2b0f647c1811584"
+                    "m_Id": "b860fad0ebf54e2b9642f02d8e5bc225"
                 },
                 "m_SlotId": 0
             }
@@ -488,6 +491,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "5920f00fb6dd4f82ab50584095b194ac"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "51dc59f7d9154d7890e78f582aa0eeb5"
+                },
+                "m_SlotId": 1
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "e19f626574664879b2b0f647c1811584"
                 },
                 "m_SlotId": 0
             }
@@ -1371,8 +1388,8 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 2.0,
-        "y": -475.0,
+        "x": 2.4000000953674318,
+        "y": -475.20001220703127,
         "width": 465.0,
         "height": 100.0
     },
@@ -1467,9 +1484,9 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 1857.0,
+        "x": 1856.800048828125,
         "y": -360.0,
-        "width": 587.0,
+        "width": 561.982666015625,
         "height": 100.0
     },
     "m_Group": {
@@ -2030,10 +2047,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1854.0001220703125,
-            "y": -507.0,
-            "width": 122.0,
-            "height": 34.0
+            "x": -1830.4000244140625,
+            "y": -504.0000305175781,
+            "width": 123.20008087158203,
+            "height": 33.600006103515628
         }
     },
     "m_Slots": [
@@ -2108,15 +2125,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "36a46b1ea224466ea0313d1d0c64f3e3",
     "m_Title": "",
-    "m_Content": "計算考慮熱輻射流動影響後的採樣用 UV 結果\nTurbulent-Normal-UV =  \nFrameTime * float2(熱輻射流向.xy) + UV;",
+    "m_Content": "計算考慮熱輻射流動影響後的採樣用 UV 結果\nTurbulent-Normal-UV = FrameTime * float2(熱輻射流向.xy) + UV;",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -1627.0,
-        "y": -290.0,
-        "width": 243.0,
-        "height": 101.0
+        "x": -1752.0,
+        "y": -276.0,
+        "width": 376.800048828125,
+        "height": 100.0
     },
     "m_Group": {
         "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
@@ -2218,10 +2235,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1719.0001220703125,
-            "y": -552.0,
-            "width": 130.0,
-            "height": 118.0
+            "x": -1696.0,
+            "y": -547.2000122070313,
+            "width": 131.199951171875,
+            "height": 117.60000610351563
         }
     },
     "m_Slots": [
@@ -2703,6 +2720,41 @@
     "m_ShaderOutputName": "Sampler",
     "m_StageCapability": 3,
     "m_BareResource": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.RedirectNodeData",
+    "m_ObjectId": "51dc59f7d9154d7890e78f582aa0eeb5",
+    "m_Group": {
+        "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
+    },
+    "m_Name": "Redirect Node",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1812.0001220703125,
+            "y": -406.3999938964844,
+            "width": 56.0,
+            "height": 24.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "ca26e89e2b1d4b769aa67084b36b2690"
+        },
+        {
+            "m_Id": "88ebf2518b9446109fc0d924b4969caf"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    }
 }
 
 {
@@ -3778,6 +3830,30 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "88ebf2518b9446109fc0d924b4969caf",
+    "m_Id": 1,
+    "m_DisplayName": "",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "892fad59318243a88fad558a70c9ab9c",
     "m_Id": 0,
@@ -4230,14 +4306,14 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "9c4ed6f5f05841d38b4525a439e8a389",
     "m_Title": "採樣法線貼圖向量資訊",
-    "m_Content": "因 '熱輻射NormalMap' 設定為 'Normal map' Type，使用 'Normal Unpack' 節點將貼圖採樣的結果 (r, g, b) (分量區間 0~1) 轉換成正確的法線向量 (x, y, z) (分量區間 -1~1)。",
+    "m_Content": "因 '熱輻射NormalMap' 設定為 'Normal map' Type，\n使用 'NormalUnpack' 節點將貼圖採樣的結果 (r, g, b)，\n分量區間 0~1 轉換成正確的法線向量 (x, y, z)，分量區間 -1~1)。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -1321.0,
-        "y": -389.0,
-        "width": 321.0,
+        "x": -1296.800048828125,
+        "y": -376.0,
+        "width": 344.800048828125,
         "height": 100.0
     },
     "m_Group": {
@@ -5253,6 +5329,30 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "ca26e89e2b1d4b769aa67084b36b2690",
+    "m_Id": 0,
+    "m_DisplayName": "",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "ca5c7308ac774fdeadb776653d8bd2d4",
     "m_Title": "",
@@ -5262,9 +5362,9 @@
     "m_Position": {
         "serializedVersion": "2",
         "x": -1400.0,
-        "y": -637.0,
+        "y": -636.7999877929688,
         "width": 303.0,
-        "height": 100.0
+        "height": 77.315673828125
     },
     "m_Group": {
         "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"
@@ -6098,15 +6198,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "f4c72d9c5a5b49fc93efd6c023a164f9",
     "m_Title": "採樣岩漿貼圖顏色",
-    "m_Content": "先前透過採樣 '熱輻射NormalMap' 得到熱輻射亂流影響之位移差向量，Turbulence-Dir。\n採樣用的 Lava-UV =\nLava-UV + Turbulence-Dir * 強度;\n以此累加計算亂流偏差後的 UV 對岩漿貼圖採樣。",
+    "m_Content": "先前透過採樣 '熱輻射NormalMap' 得到熱輻射亂流影響之位移差向量，Turbulence-Dir。\n採樣用的 Lava-UV = Lava-UV + Turbulence-Dir * 強度;\n以此累加計算亂流偏差後的 UV 對岩漿貼圖採樣。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -874.0,
-        "y": -402.0,
-        "width": 292.0,
-        "height": 103.0
+        "x": -888.0,
+        "y": -402.3999938964844,
+        "width": 310.4000244140625,
+        "height": 100.0
     },
     "m_Group": {
         "m_Id": "33b5a66d55a047aa91ab00499a4ea77a"

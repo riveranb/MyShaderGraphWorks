@@ -1211,15 +1211,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "00bbde8955394dcbab0164e5425702b8",
     "m_Title": "Vertex Shader採樣亂數貼圖",
-    "m_Content": "因在計算新的頂點位置，餵給 Vertex Context Position，這段計算發生在 Vertex Shader中。\n早期的 low-end GPU 會不支援或不建議在 Vertex Shader 中採樣 Texture，但當前的 Mobile GPU (除了最 low-end market) 應該都沒有效能上的顧慮。\n但仍要記得在 Vertex Shader 採樣 Texture 的代價會比在 Fragment Shader 更高。\n\n此使用 SampleTexture2DLOD Node，為了直接指定 Mipmap LOD level = 0 進行採樣。\n",
+    "m_Content": "因在計算新的頂點位置，餵給 Vertex Context Position，\n這段計算發生在 Vertex Shader中。\n早期的 low-end GPU 會不支援或不建議在 Vertex Shader 中採樣 Texture，\n但當前的 Mobile GPU (除了最 low-end market) 應該都沒有效能上的顧慮。\n但仍要記得在 Vertex Shader 採樣 Texture 的代價會比在 Fragment Shader 更高。\n\n此使用 SampleTexture2DLOD Node，\n為了直接指定 Mipmap LOD level = 0 進行採樣。\n",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -218.0,
-        "y": -1125.0,
-        "width": 294.0,
-        "height": 172.0
+        "x": -278.3999938964844,
+        "y": -1104.0,
+        "width": 443.20001220703127,
+        "height": 150.4000244140625
     },
     "m_Group": {
         "m_Id": "2e3487108a9346a0b984a497e398a715"
@@ -3192,14 +3192,14 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "54c0af60f032419bafc08d2c5cf9c120",
     "m_Title": "內積運算出位移強度",
-    "m_Content": "從亂數貼圖採樣的結果當作 Object Space 中的向量，Displaced(r, g, b)\n與之前計算的 3 維位移係數做內積 Dot Product，算出兩個向量間的投影比例，作為位移強度結果。",
+    "m_Content": "從亂數貼圖採樣的結果當作 Object Space 中的向量，\nDisplaced(r, g, b) 與之前計算的 3 維位移係數，\n做內積 'DotProduct' 節點計算，\n算出兩個向量間的投影比例，作為位移強度結果。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 338.0,
-        "y": -1113.0,
-        "width": 329.91302490234377,
+        "x": 415.20001220703127,
+        "y": -1110.4000244140625,
+        "width": 288.79998779296877,
         "height": 100.0
     },
     "m_Group": {
@@ -3876,9 +3876,9 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 1726.0,
-        "y": -942.0,
-        "width": 151.0,
+        "x": 1730.4000244140625,
+        "y": -937.5999755859375,
+        "width": 209.5999755859375,
         "height": 100.0
     },
     "m_Group": {
@@ -4200,15 +4200,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "7ad2f4a1e28a41928838850a125e4d28",
     "m_Title": "內積運算作為燃燒係數",
-    "m_Content": "從亂數貼圖採樣的 Noise(r, g, b) 與之前計算的 3 通道係數做內積 Dot Product，算出兩個向量間的投影比例，作為燃燒係數。\n\n為了控制目的，透過 Exposed Shader Property 調整係數 (Coef):\nCoef = Coef * BurnExtent + BurnOffset;",
+    "m_Content": "從亂數貼圖採樣的 Noise(r, g, b) \n與之前計算的 3 通道係數做，\n內積 'DotProduct' 節點運算，\n算出兩個向量間的投影比例，作為燃燒係數。\n\n為了控制目的透過 Exposed Shader Property 調整係數\n(Coef):\nCoef = Coef * BurnExtent + BurnOffset;",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
         "x": 428.0,
         "y": -348.0,
-        "width": 303.8352966308594,
-        "height": 130.0
+        "width": 298.08233642578127,
+        "height": 141.79737854003907
     },
     "m_Group": {
         "m_Id": "494a5f9cf35a469b98744b9d45681b77"
@@ -4649,9 +4649,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1183.199951171875,
-            "y": -255.19998168945313,
-            "width": 55.999996185302737,
+            "x": 1141.5999755859375,
+            "y": -263.2000427246094,
+            "width": 56.0,
             "height": 24.0
         }
     },
@@ -5385,9 +5385,9 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -258.0,
-        "y": -528.0,
-        "width": 200.0,
+        "x": -166.39999389648438,
+        "y": -524.0,
+        "width": 192.0,
         "height": 100.0
     },
     "m_Group": {
@@ -6071,10 +6071,10 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 999.0,
-        "y": -1021.0,
-        "width": 306.0,
-        "height": 75.80340576171875
+        "x": 999.2000122070313,
+        "y": -1020.7999877929688,
+        "width": 382.85211181640627,
+        "height": 68.6956787109375
     },
     "m_Group": {
         "m_Id": "2e3487108a9346a0b984a497e398a715"
@@ -6231,9 +6231,9 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 1596.0,
-        "y": -1418.0,
-        "width": 311.0,
+        "x": 1728.800048828125,
+        "y": -1044.800048828125,
+        "width": 538.39990234375,
         "height": 100.0
     },
     "m_Group": {
@@ -7622,15 +7622,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "e977f98e842a4e76828870129a84d899",
     "m_Title": "採樣 Ramp 貼圖",
-    "m_Content": "燃燒係數 Coef 當作 UV 輸入，對 Ramp Texture 採樣出預先準備好的燃燒顏色。\n\n這個例子準備的 Ramp 貼圖是 U 座標越接近 0，越趨向高光燃燒顏色，U 越趨向 1 會得到漸變為黑色至灰色的結果。\n\n因此如果我們將 Coef 控制從 0 趨向 1 的動畫過程，就能得到燃燒高光至黑煙至變淡的灰色煙之顏色效果過程。\n\n要達成這樣的動畫效果，可透過外部改變 _BurnOffset 參數\n_BurnOffset 由 0 -> 1",
+    "m_Content": "燃燒係數 Coef 當作 UV 輸入，\n對 'ExplodeRamp' Texture 採樣出預先準備好的燃燒顏色。\n\n這個例子準備的 Ramp 貼圖是 U 座標越接近 0，\n越趨向高光燃燒顏色，\nU 越趨向 1 會得到漸變為黑色至灰色的結果。\n\n因此如果我們將 Coef 控制從 0 趨向 1 的動畫過程，\n就能得到燃燒高光至黑煙至變淡的灰色煙之顏色效果過程。\n\n要達成這樣的動畫效果，\n可透過外部改變 _BurnOffset 參數：\n_BurnOffset 由 0 -> 1",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 751.0,
-        "y": -431.0,
-        "width": 312.0,
-        "height": 216.0
+        "x": 751.2000122070313,
+        "y": -412.0,
+        "width": 325.60003662109377,
+        "height": 210.39999389648438
     },
     "m_Group": {
         "m_Id": "494a5f9cf35a469b98744b9d45681b77"
@@ -7642,15 +7642,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "ebed8cb67a1d465a8bdb184fa4ef716e",
     "m_Title": "Alpha Cutout",
-    "m_Content": "前面計算出的燃燒係數 Coef 作為 Fragment Context Alpha 結果\n\n透過 Alpha 透空達到煙霧消失效果：\nif (Alpha < VanishClip)\n    discard this fragment;\n外部控制 VanishClip 從 0 -> 1 可達到從局部到完全消失的效果。\n\n在 Graph Inspector 設定視窗中，需要啟用 'Alpha Clip' 選項。",
+    "m_Content": "前面計算出的燃燒係數 Coef 作為 Fragment Context Alpha 結果。\n透過 Alpha 透空達到煙霧消失效果：\nif (Alpha < VanishClip)\n    discard this fragment;\n外部控制 VanishClip 從 0 -> 1 可達到從局部到完全消失的效果。\n\n在 Graph Inspector 設定視窗中，需要啟用 'Alpha Clip' 選項。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 1450.0,
+        "x": 1451.199951171875,
         "y": -352.0,
-        "width": 346.0,
-        "height": 146.0
+        "width": 360.1646728515625,
+        "height": 132.90162658691407
     },
     "m_Group": {
         "m_Id": ""

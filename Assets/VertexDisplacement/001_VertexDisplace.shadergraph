@@ -745,15 +745,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "03c57bb14aaa4ca48afd4644e9528427",
     "m_Title": "",
-    "m_Content": "此部分計算結果餵給 Fragment Context，因此這裡的計算都發生在 Fragment Shader。\nPosition 代表的是該像素 (Pixel/Fragment) 的位置座標。\n",
+    "m_Content": "此部分計算結果餵給 Fragment Context，因此這裡的計算都發生在 Fragment Shader。\n'Position' 代表的是該像素 (Pixel/Fragment) 的位置座標。\n",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -541.0,
-        "y": -224.0,
-        "width": 200.0,
-        "height": 100.0
+        "x": -548.7999877929688,
+        "y": -177.60000610351563,
+        "width": 312.98602294921877,
+        "height": 99.99999237060547
     },
     "m_Group": {
         "m_Id": "da696ea1ed8d40a2894840d8c88766be"
@@ -2655,10 +2655,10 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 190.0,
-        "y": -963.0,
-        "width": 375.0,
-        "height": 65.2174072265625
+        "x": 123.19999694824219,
+        "y": -948.7999877929688,
+        "width": 444.0,
+        "height": 100.0
     },
     "m_Group": {
         "m_Id": "b9506211e8f14feeb60c6ac9aad64291"
@@ -2896,10 +2896,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 88.0,
-            "y": -899.0,
-            "width": 120.0,
-            "height": 34.0
+            "x": 97.60002136230469,
+            "y": -969.6000366210938,
+            "width": 120.80000305175781,
+            "height": 33.5999755859375
         }
     },
     "m_Slots": [
@@ -3522,7 +3522,7 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "a1bf3514b6b14770b441aadd9b7ddd4e",
     "m_Title": "",
-    "m_Content": "輸入的位移強度取整數上限\nEx: \nceiling(0.2) = 1;\nceiling(2.5) = 3;\n當作自發光顏色的倍數 (HDR color 強度可超過 1)",
+    "m_Content": "'Ceiling' 節點計算輸入的位移強度取整數上限\nEx: \nceiling(0.2) = 1;\nceiling(2.5) = 3;\n當作自發光顏色的倍數 (HDR color 強度可超過 1)",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
@@ -4337,15 +4337,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "dcd94a24cb96459696d5441d729b8e15",
     "m_Title": "亂數",
-    "m_Content": "Position + Time 作為 Voronoi 之 UV 輸入；\nPosition + TIme + Time 作為 Simple Noise 之 UV 輸入；\n最終 Noise Pattern Color = Voronoi * SimpleNoise。",
+    "m_Content": "Position + Time 作為 'Voronoi' 節點之 UV 輸入；\nPosition + TIme + Time 作為 Simple Noise 之 UV 輸入；\n最終 Noise Pattern Color = Voronoi * SimpleNoise。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
         "x": 368.0,
-        "y": -337.0,
-        "width": 337.478271484375,
-        "height": 100.0
+        "y": -337.6000061035156,
+        "width": 337.60003662109377,
+        "height": 99.19998168945313
     },
     "m_Group": {
         "m_Id": "da696ea1ed8d40a2894840d8c88766be"
@@ -4727,14 +4727,14 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "ed90a41b6c504a8bbffb0e6e923694c3",
     "m_Title": "",
-    "m_Content": "以UV空間概念作為輸入計算出一連續性的亂數結果，在此將改變後的 Object Space Position (.xy) 當作輸入 UV。",
+    "m_Content": "以UV空間概念作為輸入計算出一連續性的亂數結果，\n在此將改變後的 Object Space Position (.xy) 當作輸入 UV。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 26.0,
-        "y": -822.0,
-        "width": 203.0,
+        "x": 26.400001525878908,
+        "y": -801.5999755859375,
+        "width": 340.79998779296877,
         "height": 100.0
     },
     "m_Group": {

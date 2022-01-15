@@ -350,15 +350,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "0009ddfa036e483eae009df74713a1f1",
     "m_Title": "Alpha Clip Threshold",
-    "m_Content": "轉換到 [-0.05 ~ 1.05] 的 Sin(Frame-Time) 計算結果直接指定為 Fragment Context 中的 'Alpha Clip Threshold'\n因此隨時間改變，'Alpha Clip Threshold' 會在 [-0.05 ~ 1.05] 之間變動。",
+    "m_Content": "轉換到 [-0.05 ~ 1.05] 的 Sin(Frame-Time) 計算結果，\n直接指定為 Fragment Context 中的 'Alpha Clip Threshold'。\n因此隨時間改變，\n'Alpha Clip Threshold' 會在 [-0.05 ~ 1.05] 之間變動。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 533.0,
-        "y": 313.0,
-        "width": 256.0,
-        "height": 109.0
+        "x": 464.0,
+        "y": 332.0,
+        "width": 330.8582458496094,
+        "height": 100.0
     },
     "m_Group": {
         "m_Id": ""
@@ -727,15 +727,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "3082f34ff48b4247aabb90b66d88de17",
     "m_Title": "",
-    "m_Content": "Frame time: 從內建 Time 功能節點取得 Sin(Frame-Time)。\n原本 Sin() 結果落於 [-1 ~ 1] 之間，透過 Remap 功能節點把結果轉換成 [-0.05 ~ 1.05] 之間 (其實 [0~1] 區間也沒多大差別)。",
+    "m_Content": "Frame time: 從內建 Time 功能節點取得 Sin(Frame-Time)。\n原本 Sin() 結果落於 [-1 ~ 1] 之間，\n透過 'Remap' 功能節點把結果轉換成 [-0.05 ~ 1.05] 之間。\n(其實 [0~1] 區間也沒多大差別)。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -922.0,
-        "y": 486.0,
-        "width": 345.0,
-        "height": 100.0
+        "x": -921.5999755859375,
+        "y": 485.5999755859375,
+        "width": 328.362060546875,
+        "height": 63.478271484375
     },
     "m_Group": {
         "m_Id": ""
@@ -852,15 +852,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "46fac75ebf8e4a76b2021bd0568dc8b5",
     "m_Title": "消失邊緣的自發強光 Emission",
-    "m_Content": "'溶解高光' 外部變數決定 HDR Color。\n\n已知溶解條件是 Alpha <= Alpha-Clip-Threshold；所以可使用 Alpha-Clip-Threshold + '邊緣厚度' 作為自發強光的上限值，條件式如下：\nif (Alpha < ('Alpha-Clip-Threshold' + '邊緣厚度') )\n    Emission = 1;\nelse\n    Emission - 0;\n最後 Emission = Emission * 溶解高光(Color); // 指定給 Fragment Context 中的 Emission\n\nStep Function 節點只是為了方便完成上述條件式。",
+    "m_Content": "'溶解高光' 外部變數決定 HDR Color。\n已知溶解條件是 Alpha <= Alpha-Clip-Threshold；\n所以可使用 Alpha-Clip-Threshold + '邊緣厚度' 作為自發強光的上限值，\n條件式如下：\nif (Alpha < ('Alpha-Clip-Threshold' + '邊緣厚度') )\n    Emission = 1;\nelse\n    Emission - 0;\n// 指定給 Fragment Context 中的 Emission\n最後 Emission = Emission * 溶解高光(Color);\n\n'Step' 節點只是為了方便完成上述條件式。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -59.0,
-        "y": -62.0,
-        "width": 487.0,
-        "height": 185.0
+        "x": -59.20000076293945,
+        "y": -62.400001525878909,
+        "width": 398.4353332519531,
+        "height": 193.4901885986328
     },
     "m_Group": {
         "m_Id": "63164c80455f484ebbdbe499abaef135"
@@ -1274,14 +1274,14 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "7be5f2848248486fb3a00146ee74697e",
     "m_Title": "",
-    "m_Content": "Fragment Context 中 BaseColor 單純由 'Albedo Map' 貼圖採樣決定",
+    "m_Content": "Fragment Context 中 BaseColor 單純由 'Albedo Map' 貼圖採樣決定。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 462.0,
-        "y": -315.0,
-        "width": 200.0,
+        "x": 284.79998779296877,
+        "y": -298.3999938964844,
+        "width": 372.0,
         "height": 100.0
     },
     "m_Group": {
@@ -1475,15 +1475,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "9e969298afda48e48e41b856a0f17ae5",
     "m_Title": "Fragment Shader 處理 Dissolve 效果",
-    "m_Content": "此 Shader 想做的事：\n在 Fragment Shader 階段中，透過計算 'Alpha', 'Alpha Clip Threshold' 來決定哪些像素區域要出現，那些要消失 (當 Alpha <= Alpha-Clip-Threshold 會被 Fragment Shader 放棄填入顏色)；\n參考消失範圍計算適當的自發光顏色；\n\n在 Graph Inspector 中需要啟用 'Alpha Clip' 選項；另外為了能看到背對鏡頭的幾何也有正常進行 Dissolve 效果處理，所以啟用 'Two Sided' 選項。",
+    "m_Content": "此 Shader 想做的事：\n在 Fragment Shader 階段中，\n透過計算 'Alpha', 'Alpha Clip Threshold' 來決定哪些像素區域要出現，\n那些要消失 (當 Alpha <= Alpha-Clip-Threshold 會被 Fragment Shader 放棄填入顏色)；\n參考消失範圍計算適當的自發光顏色；\n\n在 Graph Inspector 中需要啟用 'Alpha Clip' 選項；\n另外為了能看到背對鏡頭的幾何也有正常進行 Dissolve 效果處理，所以啟用 'Two Sided' 選項。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 796.0,
-        "y": 374.0,
-        "width": 392.0,
-        "height": 159.73532104492188
+        "x": 799.2000122070313,
+        "y": 355.20001220703127,
+        "width": 484.79998779296877,
+        "height": 144.0
     },
     "m_Group": {
         "m_Id": ""
@@ -1858,9 +1858,9 @@
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 759.0,
-        "y": -286.0,
-        "width": 329.0,
+        "x": 803.2000122070313,
+        "y": -288.79998779296877,
+        "width": 328.79998779296877,
         "height": 100.0
     },
     "m_Group": {
@@ -2187,14 +2187,14 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "eed0dbff09be45f8b329f35c4d606ea7",
     "m_Title": "Alpha = 'Simple Noise'",
-    "m_Content": "使用 Simple Noise 亂數功能節點，直接指定給 Fragment Context 中的 Alpha 結果。",
+    "m_Content": "使用 'SimpleNoise' 亂數功能節點，\n直接指定給 Fragment Context 中的 Alpha 結果。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -407.0,
-        "y": -55.0,
-        "width": 266.0,
+        "x": -406.3999938964844,
+        "y": -55.20000076293945,
+        "width": 270.1701354980469,
         "height": 100.0
     },
     "m_Group": {

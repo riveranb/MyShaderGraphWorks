@@ -1170,15 +1170,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "30d3dbccba7e431aaa6459a44f4bf930",
     "m_Title": "",
-    "m_Content": "使用 RandomRange 節點計算位於 [0 ~ 1] 之間的亂數，\n將 float2(全息圖案採樣顏色.r, Frame-Time) 作為 RandomRange 節點的輸入 (Seed)\n然後使用 Comparison 與 Branch 節點進行條件判斷：\nif (RandomRange > 0.9) // True\n{\n    Out = 1.2;\n}\nelse // False\n{\n    Out = 0.8f;\n}",
+    "m_Content": "使用 RandomRange 節點計算位於 [0 ~ 1] 之間的亂數，\n將 float2(全息圖案採樣顏色.r, Frame-Time)，\n作為 'RandomRange' 節點的輸入 (Seed)。\n然後使用 'Comparison' 與 'Branch' 節點進行條件判斷：\nif (RandomRange > 0.9) // True\n{\n    Out = 1.2;\n}\nelse // False\n{\n    Out = 0.8f;\n}",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -1006.0,
-        "y": 579.0,
-        "width": 457.0,
-        "height": 165.0
+        "x": -991.2000122070313,
+        "y": 564.7999877929688,
+        "width": 456.79998779296877,
+        "height": 180.0
     },
     "m_Group": {
         "m_Id": "12d768843e3c4a05811d70218d95a994"
@@ -2115,15 +2115,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "80693dbf0750499b9078a3799bcf56ef",
     "m_Title": "邊緣反光 Fresnel 效應",
-    "m_Content": "Fresnel Effect 節點計算邊緣反光強度。\n可參考這篇好文章解釋\nhttps://reurl.cc/OpXzNr\n簡單說即模擬越邊緣越亮的效應。",
+    "m_Content": "'FresnelEffect' 節點計算邊緣反光強度。\n可參考這篇好文章解釋\nhttps://reurl.cc/OpXzNr\n簡單說即模擬越邊緣越亮的效應。",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": -1243.0,
-        "y": 49.0,
-        "width": 243.0,
-        "height": 100.0
+        "x": -1242.4000244140625,
+        "y": 46.400001525878909,
+        "width": 232.0,
+        "height": 99.99999237060547
     },
     "m_Group": {
         "m_Id": "021cae9efcd14c1ab4cf4a1ebc7b18e8"

@@ -130,10 +130,38 @@
             "m_Id": "8be0f89bdaf54219920b96c8472fc9ee"
         }
     ],
-    "m_GroupDatas": [],
+    "m_GroupDatas": [
+        {
+            "m_Id": "d0c8013fa4464c1e981ad7a5563aeb74"
+        },
+        {
+            "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
+        }
+    ],
     "m_StickyNoteDatas": [
         {
             "m_Id": "709f9748214a4c5c9854721b95e7b25e"
+        },
+        {
+            "m_Id": "1ebe1129f3264aeb8a91dfa553b8c34a"
+        },
+        {
+            "m_Id": "20fa73c2ff894dbf801f8cc5113c8329"
+        },
+        {
+            "m_Id": "11bbdc4a8fcc49e3b8608372d57839e2"
+        },
+        {
+            "m_Id": "cf24fbd4902749eb8c0e3a2fc1bfc75b"
+        },
+        {
+            "m_Id": "e9f6e3bc145a4776bfd9c9baae6e410f"
+        },
+        {
+            "m_Id": "f277a818442a4f53893ea6f067830af1"
+        },
+        {
+            "m_Id": "335c924ad59246ffaf3cb5afbeed0e91"
         }
     ],
     "m_Edges": [
@@ -760,10 +788,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -438.00006103515627,
-            "y": 156.0000457763672,
-            "width": 130.0,
-            "height": 118.0
+            "x": -438.4000549316406,
+            "y": 99.99999237060547,
+            "width": 130.39999389648438,
+            "height": 117.60000610351563
         }
     },
     "m_Slots": [
@@ -815,17 +843,17 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector2Node",
     "m_ObjectId": "0709b7c01faf4c328a368fa4965eee58",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Vector 2",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1625.6002197265625,
-            "y": 282.3999938964844,
-            "width": 128.0,
-            "height": 100.80001831054688
+            "x": -2046.39990234375,
+            "y": 259.20001220703127,
+            "width": 128.80003356933595,
+            "height": 100.79998016357422
         }
     },
     "m_Slots": [
@@ -923,17 +951,17 @@
     "m_Type": "UnityEditor.ShaderGraph.NoiseNode",
     "m_ObjectId": "09bcfc01026c49c1b21cf9ee3128cfcf",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Simple Noise",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1203.199951171875,
-            "y": 282.39996337890627,
-            "width": 148.80003356933595,
-            "height": 117.5999984741211
+            "x": -1623.9998779296875,
+            "y": 259.20001220703127,
+            "width": 148.800048828125,
+            "height": 117.59996795654297
         }
     },
     "m_Slots": [
@@ -1022,9 +1050,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -438.3999938964844,
+            "x": -641.6000366210938,
             "y": 317.6000061035156,
-            "width": 125.60000610351563,
+            "width": 125.5999755859375,
             "height": 117.60000610351563
         }
     },
@@ -1053,17 +1081,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SaturateNode",
     "m_ObjectId": "0ffb40c2b7d34bee899e51e08c322747",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d0c8013fa4464c1e981ad7a5563aeb74"
     },
     "m_Name": "Saturate",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -845.60009765625,
-            "y": 493.5999755859375,
+            "x": -1175.199951171875,
+            "y": 712.7999877929688,
             "width": 128.0,
-            "height": 93.60003662109375
+            "height": 94.4000244140625
         }
     },
     "m_Slots": [
@@ -1120,6 +1148,26 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "11bbdc4a8fcc49e3b8608372d57839e2",
+    "m_Title": "細微積雪紋路變化",
+    "m_Content": "使用像素位置 (World Space Position).xz，\n作為 'SimpleNoise' 節點輸入，\n產生亂數變化值 [0 ~ 1]，\n然後用 'Remap' 節點將亂數值轉換至 [0.5 ~ 0.9] 區間。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1916.800048828125,
+        "y": 320.79998779296877,
+        "width": 296.800048828125,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
+    }
 }
 
 {
@@ -1225,17 +1273,17 @@
     "m_Type": "UnityEditor.ShaderGraph.NegateNode",
     "m_ObjectId": "1e81a901b652483ab51061f68401f968",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d0c8013fa4464c1e981ad7a5563aeb74"
     },
     "m_Name": "Negate",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1212.0001220703125,
-            "y": 564.0,
+            "x": -1541.599853515625,
+            "y": 781.5999145507813,
             "width": 132.7999267578125,
-            "height": 93.5999755859375
+            "height": 94.4000244140625
         }
     },
     "m_Slots": [
@@ -1257,20 +1305,40 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "1ebe1129f3264aeb8a91dfa553b8c34a",
+    "m_Title": "",
+    "m_Content": "內積解釋參考\nhttps://reurl.cc/Goolqx\n使用 'DotProduct' 節點計算像素法向量與降雪方向的內積 (投影比例)。\n內積結果越接近 1 代表兩個輸入方向越趨近相同方向，\n內積結果越接近 0 代表兩個輸入方向越趨近垂直。\n\n故法向量與降雪方向越一致，內積結果越接近 1，\n現實世界中也代表越容易累積降雪。\n之後再使用 'Saturate' 節點將內積結果限縮在 [0 ~ 1] 之間 (過濾掉負數)。\n",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1349.5999755859375,
+        "y": 576.0,
+        "width": 390.39996337890627,
+        "height": 145.5999755859375
+    },
+    "m_Group": {
+        "m_Id": "d0c8013fa4464c1e981ad7a5563aeb74"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.OneMinusNode",
     "m_ObjectId": "1f0b13953e1d49d0ad3f2c9fa3905b57",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "One Minus",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1457.0,
-            "y": 73.0,
-            "width": 128.0,
-            "height": 94.00000762939453
+            "x": -1877.599853515625,
+            "y": 49.599979400634769,
+            "width": 128.7999267578125,
+            "height": 93.5999984741211
         }
     },
     "m_Slots": [
@@ -1295,17 +1363,17 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "20f0ef82b61d4ff0b0c9c20d05bb4c21",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -681.5999755859375,
-            "y": 306.3999938964844,
-            "width": 125.5999755859375,
-            "height": 117.60000610351563
+            "x": -1102.39990234375,
+            "y": 283.20001220703127,
+            "width": 126.40001678466797,
+            "height": 117.59996795654297
         }
     },
     "m_Slots": [
@@ -1325,6 +1393,26 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "20fa73c2ff894dbf801f8cc5113c8329",
+    "m_Title": "",
+    "m_Content": "因為目的是計算 Fragment Context 中的 BaseColor，\n故計算處理皆發生在 Fragment Shader 階段。\n在此取得的是代表當前像素的 (World Space) 'Normal' 法向量。\n\n因為外部設定之降雪方向一般來說是由天而降，\n此外部方向參數可自由設定，\n故使用 'Normalize' 節點將其正規化回單位長度 1 之方向向量。\n並用 'Negate' 節點乘上負號，轉換成飄雪來自的方向，\n方便後續做正確內積運算。\n",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1758.4000244140625,
+        "y": 524.7999877929688,
+        "width": 347.2000732421875,
+        "height": 144.0
+    },
+    "m_Group": {
+        "m_Id": "d0c8013fa4464c1e981ad7a5563aeb74"
     }
 }
 
@@ -1428,6 +1516,26 @@
     },
     "m_Labels": [],
     "m_Space": 3
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "335c924ad59246ffaf3cb5afbeed0e91",
+    "m_Title": "",
+    "m_Content": "最終 'BaseColor' 結果：\n// 基礎貼圖顏色 + 積雪顏色 (直接用積雪強度作為顏色)\nBaseTex-Color + (整體積雪強度 * 最終積雪程度結果)",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -399.1999816894531,
+        "y": 332.0,
+        "width": 323.20001220703127,
+        "height": 68.11737060546875
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {
@@ -1569,17 +1677,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SaturateNode",
     "m_ObjectId": "428ddb7d23a44cb990fe5169217b39fd",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Saturate",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1629.0,
-            "y": 73.0,
-            "width": 128.0,
-            "height": 94.00000762939453
+            "x": -2049.599853515625,
+            "y": 49.599979400634769,
+            "width": 128.80003356933595,
+            "height": 93.5999984741211
         }
     },
     "m_Slots": [
@@ -1604,17 +1712,17 @@
     "m_Type": "UnityEditor.ShaderGraph.DotProductNode",
     "m_ObjectId": "42e3abdba7ee4e799168c824c82f621f",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Dot Product",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1795.0,
-            "y": 73.0,
-            "width": 128.0,
-            "height": 118.0
+            "x": -2215.999755859375,
+            "y": 49.599979400634769,
+            "width": 128.80003356933595,
+            "height": 117.59999084472656
         }
     },
     "m_Slots": [
@@ -1768,10 +1876,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -663.0000610351563,
-            "y": -33.99999237060547,
-            "width": 132.0,
-            "height": 34.0
+            "x": -649.6000366210938,
+            "y": 5.599993705749512,
+            "width": 133.5999755859375,
+            "height": 33.599998474121097
         }
     },
     "m_Slots": [
@@ -2002,10 +2110,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -715.0000610351563,
-            "y": 14.00000286102295,
-            "width": 184.0,
-            "height": 253.0
+            "x": -701.5999755859375,
+            "y": 53.5999870300293,
+            "width": 186.39996337890626,
+            "height": 250.39999389648438
         }
     },
     "m_Slots": [
@@ -2122,17 +2230,17 @@
     "m_Type": "UnityEditor.ShaderGraph.NormalizeNode",
     "m_ObjectId": "6643d2a459a146b083715bd4331d2f77",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d0c8013fa4464c1e981ad7a5563aeb74"
     },
     "m_Name": "Normalize",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1372.8001708984375,
-            "y": 564.0,
+            "x": -1702.39990234375,
+            "y": 781.5999145507813,
             "width": 132.800048828125,
-            "height": 93.5999755859375
+            "height": 94.4000244140625
         }
     },
     "m_Slots": [
@@ -2256,15 +2364,15 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "709f9748214a4c5c9854721b95e7b25e",
     "m_Title": "Master Stack",
-    "m_Content": "參考\nhttps://www.youtube.com/watch?v=IC9g5hlfV6o\n\nMaterial: 'Lit'\n",
+    "m_Content": "2021/12/26\n\n參考\nhttps://www.youtube.com/watch?v=IC9g5hlfV6o\n\nMaterial: 'Lit'\n",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
         "serializedVersion": "2",
-        "x": 3.200000047683716,
-        "y": -85.5999984741211,
-        "width": 302.3999938964844,
-        "height": 100.0
+        "x": -85.60000610351563,
+        "y": -88.80000305175781,
+        "width": 302.4000244140625,
+        "height": 114.39999389648438
     },
     "m_Group": {
         "m_Id": ""
@@ -2273,20 +2381,31 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "73b6ac20967542d29d86b67e3bf7013d",
+    "m_Title": "亂數積雪紋路/模式",
+    "m_Position": {
+        "x": -2494.39990234375,
+        "y": -200.00001525878907
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DotProductNode",
     "m_ObjectId": "7448ed867d6d4099b923fdb6ef381c5c",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d0c8013fa4464c1e981ad7a5563aeb74"
     },
     "m_Name": "Dot Product",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1013.6000366210938,
-            "y": 493.5999755859375,
+            "x": -1343.199951171875,
+            "y": 712.7999877929688,
             "width": 128.0,
-            "height": 117.60003662109375
+            "height": 118.4000244140625
         }
     },
     "m_Slots": [
@@ -2400,17 +2519,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "7aaa77b8519e42a9aa4185f15fe55922",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d0c8013fa4464c1e981ad7a5563aeb74"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -837.6000366210938,
-            "y": 587.2000122070313,
-            "width": 120.79998779296875,
-            "height": 33.5999755859375
+            "x": -1167.199951171875,
+            "y": 805.5999145507813,
+            "width": 120.79993438720703,
+            "height": 34.4000244140625
         }
     },
     "m_Slots": [
@@ -2498,16 +2617,16 @@
     "m_Type": "UnityEditor.ShaderGraph.NormalVectorNode",
     "m_ObjectId": "80a39109313d4b78b90661adc361fc31",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d0c8013fa4464c1e981ad7a5563aeb74"
     },
     "m_Name": "Normal Vector",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1285.6002197265625,
-            "y": 427.9999694824219,
-            "width": 206.4000244140625,
+            "x": -1615.199951171875,
+            "y": 645.5999755859375,
+            "width": 206.39990234375,
             "height": 130.4000244140625
         }
     },
@@ -2792,17 +2911,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SubtractNode",
     "m_ObjectId": "8be0f89bdaf54219920b96c8472fc9ee",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Subtract",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -964.0,
-            "y": 96.99998474121094,
-            "width": 126.0,
-            "height": 117.99999237060547
+            "x": -1384.7999267578125,
+            "y": 73.5999755859375,
+            "width": 126.40001678466797,
+            "height": 117.59999084472656
         }
     },
     "m_Slots": [
@@ -2929,17 +3048,17 @@
     "m_Type": "UnityEditor.ShaderGraph.RemapNode",
     "m_ObjectId": "976c2ae7a92b445c8eb57a039b4ec09f",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Remap",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1241.9998779296875,
-            "y": 119.99996948242188,
-            "width": 186.0,
-            "height": 142.0
+            "x": -1662.39990234375,
+            "y": 96.79998016357422,
+            "width": 189.5999755859375,
+            "height": 141.59999084472657
         }
     },
     "m_Slots": [
@@ -3184,17 +3303,17 @@
     "m_Type": "UnityEditor.ShaderGraph.GradientNoiseNode",
     "m_ObjectId": "ac6e822e798f4a5589752edcb2bb31e8",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Gradient Noise",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1433.0,
-            "y": -117.99998474121094,
-            "width": 147.0,
-            "height": 118.0
+            "x": -1853.599853515625,
+            "y": -141.60000610351563,
+            "width": 148.7999267578125,
+            "height": 117.59999084472656
         }
     },
     "m_Slots": [
@@ -3325,17 +3444,17 @@
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "b301612e239642029ad4520218064634",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d0c8013fa4464c1e981ad7a5563aeb74"
     },
     "m_Name": "Multiply",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -681.6000366210938,
-            "y": 493.5999755859375,
-            "width": 125.5999755859375,
-            "height": 117.60003662109375
+            "x": -1011.199951171875,
+            "y": 712.7999877929688,
+            "width": 125.60002899169922,
+            "height": 118.4000244140625
         }
     },
     "m_Slots": [
@@ -3370,10 +3489,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -878.0001220703125,
-            "y": 39.00000762939453,
-            "width": 129.0,
-            "height": 34.0
+            "x": -864.800048828125,
+            "y": 79.19998168945313,
+            "width": 131.20001220703126,
+            "height": 33.600006103515628
         }
     },
     "m_Slots": [
@@ -3413,17 +3532,17 @@
     "m_Type": "UnityEditor.ShaderGraph.SplitNode",
     "m_ObjectId": "b4de9997972746a5ba8ebe588ae8ade8",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Split",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1783.2001953125,
-            "y": 234.39999389648438,
-            "width": 119.99999237060547,
-            "height": 148.80001831054688
+            "x": -2203.999755859375,
+            "y": 211.19996643066407,
+            "width": 120.800048828125,
+            "height": 148.8000030517578
         }
     },
     "m_Slots": [
@@ -3485,17 +3604,17 @@
     "m_Type": "UnityEditor.ShaderGraph.NormalVectorNode",
     "m_ObjectId": "ba1f2d92a9e940b39c88a233a0590d98",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Normal Vector",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2048.0,
-            "y": 1.9999792575836182,
-            "width": 206.0,
-            "height": 132.0
+            "x": -2468.7998046875,
+            "y": -21.600019454956056,
+            "width": 206.400146484375,
+            "height": 130.40000915527345
         }
     },
     "m_Slots": [
@@ -3637,6 +3756,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "cf24fbd4902749eb8c0e3a2fc1bfc75b",
+    "m_Title": "世界範圍積雪樣式變化",
+    "m_Content": "用像素位置 (World Space Position).xz，\n作為 'GradientNoise' 節點輸入，\n這裡將 Gradient 的 'Scale' 輸入調低，\n目的要讓產生之亂數圖案變化發生在較大範圍的空間。\n之後再將 Gradient 亂數結果 [0 ~ 1]，\n透過 'Remap' 節點轉換至 [0.33 ~ 0.9] 區間。",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -2174.39990234375,
+        "y": -155.1999969482422,
+        "width": 286.27978515625,
+        "height": 116.0
+    },
+    "m_Group": {
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "d0a460f9260c44bab9a60f99a82b5e09",
     "m_Group": {
@@ -3666,6 +3805,17 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "SurfaceDescription.NormalTS"
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.GroupData",
+    "m_ObjectId": "d0c8013fa4464c1e981ad7a5563aeb74",
+    "m_Title": "整體積雪強度",
+    "m_Position": {
+        "x": -1874.4000244140625,
+        "y": 467.2000732421875
+    }
 }
 
 {
@@ -3826,17 +3976,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PositionNode",
     "m_ObjectId": "de5d2fed74914d72bba69aa5c73ea7ce",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Position",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2024.8001708984375,
-            "y": 234.39999389648438,
-            "width": 206.4000244140625,
-            "height": 130.39999389648438
+            "x": -2445.599853515625,
+            "y": 211.19996643066407,
+            "width": 206.400146484375,
+            "height": 130.40000915527345
         }
     },
     "m_Slots": [
@@ -3898,17 +4048,17 @@
     "m_Type": "UnityEditor.ShaderGraph.RemapNode",
     "m_ObjectId": "e2d2831b13e74293921157dee1b77cdb",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Remap",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -935.2000122070313,
-            "y": 282.39996337890627,
-            "width": 189.6000213623047,
-            "height": 141.60000610351563
+            "x": -1355.9998779296875,
+            "y": 259.20001220703127,
+            "width": 189.5999755859375,
+            "height": 141.5999755859375
         }
     },
     "m_Slots": [
@@ -3939,17 +4089,17 @@
     "m_Type": "UnityEditor.ShaderGraph.RemapNode",
     "m_ObjectId": "e3e21d78510a42fd9745ad16adb13491",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     },
     "m_Name": "Remap",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1242.0,
-            "y": -56.99999237060547,
-            "width": 186.00001525878907,
-            "height": 142.0
+            "x": -1662.39990234375,
+            "y": -80.0,
+            "width": 189.5999755859375,
+            "height": 141.60000610351563
         }
     },
     "m_Slots": [
@@ -3980,17 +4130,17 @@
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "e57c5fd0e611482884b3df93a16926de",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "d0c8013fa4464c1e981ad7a5563aeb74"
     },
     "m_Name": "Property",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1520.0001220703125,
-            "y": 604.0,
-            "width": 123.199951171875,
-            "height": 33.5999755859375
+            "x": -1849.5999755859375,
+            "y": 822.4000244140625,
+            "width": 123.19994354248047,
+            "height": 34.39996337890625
         }
     },
     "m_Slots": [
@@ -4007,6 +4157,26 @@
     },
     "m_Property": {
         "m_Id": "145e681f74574a0da99e8a89f7a63636"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "e9f6e3bc145a4776bfd9c9baae6e410f",
+    "m_Title": "削弱偏垂直方向上的積雪程度",
+    "m_Content": "現實世界中垂直牆面上要留下厚重積雪較困難，\n因此前述計算出來的世界範圍中亂數積雪區域結果 (GradientSnowy)，\n想在較垂直面的幾何中減弱其積雪強度。\n\n// 內積運算，故意使用向量 [0, 10, 0] 放大內積結果\n水平程度 = Dot(Normal, [0, 10, 0]);\n// 過濾負數，落在 [0 ~ 1] 區間，越靠近 0 代表越垂直\n水平程度 = Saturate(水平程度);\n// 使用 'OneMinus' 節點找出垂直程度，越靠近 1 越垂直\n垂直程度 = 1 - 水平程度;\n最後用 'Remap' 節點將垂直程度轉至 [0 ~ 0.4] 區間。\n\n故世界積雪分布結果為： GradientSnowy - 垂直程度\n",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1408.0,
+        "y": -126.4000015258789,
+        "width": 372.0,
+        "height": 208.0
+    },
+    "m_Group": {
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     }
 }
 
@@ -4031,6 +4201,26 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "f277a818442a4f53893ea6f067830af1",
+    "m_Title": "",
+    "m_Content": "最終積雪程度結果即為：\n細微積雪紋路係數 * 世界積雪分布結果係數",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -1131.199951171875,
+        "y": 219.20001220703126,
+        "width": 247.99993896484376,
+        "height": 100.0
+    },
+    "m_Group": {
+        "m_Id": "73b6ac20967542d29d86b67e3bf7013d"
     }
 }
 

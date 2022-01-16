@@ -4156,7 +4156,7 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "7a6267f7db814f9199f624b1a988ac5d",
     "m_Title": "係數權重調整，做法可自由變化",
-    "m_Content": "Combine 為 (r, g, b)\n1. 然後對每個通道數值做小範圍調整：\n(r, g, b) = (r, g, b) * float3(0.5, 0.5, 0.5) + float3(0.25, 0.25, 0.25);\n\n2. 再算 3 通道總和 (透過 Dot) 當作平衡權重：\nweight = 2r + 2g + 2b;\n(r, g, b) /= float3(weight, weight, weight);\n\n// 這段我本來拉節點編到太痛苦，所以第一版後來改到 C# script 實現比較快，這也是有些 programmer 討厭用圖形化編輯的原因 (就我www)",
+    "m_Content": "Combine 為 (r, g, b)\n1. 然後對每個通道數值做小範圍調整：\n(r, g, b) = (r, g, b) * float3(0.5, 0.5, 0.5) + float3(0.25, 0.25, 0.25);\n\n2. 再算 3 通道總和 (透過 'DotProduct') 當作平衡權重：\nweight = 2r + 2g + 2b;\n(r, g, b) /= float3(weight, weight, weight);\n\n// 這段我本來拉節點編到太痛苦，所以第一版後來改到 C# script 實現比較快，這也是有些 programmer 討厭用圖形化編輯的原因 (就我www)",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
